@@ -1,0 +1,11 @@
+bin\Debug\BusinessSLM.dll
+bin\Debug\BusinessSLM.pdb
+bin\Debug\DataSLM.dll
+bin\Debug\EntitiesSLM.dll
+bin\Debug\UtilitySLM.dll
+bin\Debug\UtilitySLM.pdb
+bin\Debug\EntitiesSLM.pdb
+bin\Debug\DataSLM.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BusinessSLM.dll
+obj\Debug\BusinessSLM.pdb

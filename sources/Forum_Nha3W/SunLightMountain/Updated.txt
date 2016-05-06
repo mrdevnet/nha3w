@@ -1,0 +1,82 @@
+
+A. 08/08/2009
+
+1. Insert one field at table SLM_PM
+
+2. Add one store : selPmNIsView
+
+
+--------------------------------------------------
+27/08/2009
+
+1. insert two field into member profile table
+
+2. Create thanks table 
+
+3. insert field thanks author
+
+4. edit MemberAuthorize store
+
+5. edit selMessageDetails store
+
+6. edit selGrpFrmAuthor store
+
+7. edit updMemberPro store
+
+8. edit  selMemberPro store
+
+9. insert field MyRss author
+
+--------------------------------------------------
+05/09/2009
+
+1. edit selForumList store
+
+2. Create selTypeTopic store
+
+3. edit selTopicActLst store 
+
+4. edit selTopicLstCount store 
+
+5. edit selTopicSchForum store  *
+
+6. edit selTopicSchFCount store  *
+
+7. edit selTopicSchForumA store  
+
+8. edit selTopicSchFACount store 
+
+9. edit selMessageSch store 
+
+10. edit selMsgSchCount store 
+
+11. edit selMessageSchForum store 
+
+12. edit selMsgSchCountForum store 
+
+13. edit selSearchAdvance store
+
+14. edit selSearchAdvCount store
+
+15. edit selTopicLive store 
+
+16. edit selTopicLive2 store 
+
+17. edit selMemberTenPosts store
+
+18. edit ForumJ store 
+
+19. edit ForumJumper store 
+
+20. Create selPrivateFrms store
+
+21. Create selPriUserFrm store
+
+22. Create insPrivUsersFrms store 
+
+23. Create delPrivUsersFrms store 
+
+
+
+
+

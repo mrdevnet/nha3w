@@ -1,0 +1,116 @@
+﻿body 
+{
+    margin-bottom : 16px;
+    margin-left : 10px;
+    margin-right : 10px;
+    margin-top : 7px;        
+}
+
+A.HeaderlinkA:link,A.HeaderlinkA:active,A.HeaderlinkA:visited
+{
+	font-family : Verdana, Tahoma, Arial;
+	color: White;
+	text-decoration:none;
+	font-size:11px;
+	vertical-align : middle;
+	font-weight : bold
+} 
+
+A.HeaderlinkA:hover
+{
+	font-family : Verdana, Tahoma, Arial;
+    color: White;
+	text-decoration:underline;
+	font-size:11px;
+	vertical-align : middle;
+	font-weight : bold
+}
+
+.accordionHeader
+{
+    border: 1px dashed #2F4F4F;
+    color: white;
+    background-color: #2E4d7B;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeader a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+	border: 1px dashed #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeaderSelected a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeaderSelected a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionContent
+{
+	background-color: #D3DEEF;
+    border: 1px outset silver;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+a:link.ContentLink,a:visited.ContentLink
+{
+	font-family : Tahoma, Verdana, Arial;
+	color: #2E4d7B;
+	text-decoration:none;
+	font-size:12px;
+	vertical-align : middle;	
+} 
+
+a:hover.ContentLink
+{
+	font-family : Tahoma,Verdana, Arial;
+    color: #2F4F4F;
+	text-decoration:underline;
+	font-size:12px;
+	vertical-align : middle;	
+}
+
+a:active.ContentLink
+{
+	font-family : Tahoma, Verdana, Arial;
+	color: #2E4d7B;
+	text-decoration:underline;
+	font-size:12px;
+	vertical-align : middle;	
+} 
+

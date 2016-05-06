@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1738027D-99FE-43F0-BD46-7B2ECE184D80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BHLS</RootNamespace>
+    <AssemblyName>BHLS</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <ProjectReference Include="..\DHLS\DHLS.csproj">
+      <Project>{5B70F650-3154-43D6-BC20-D802B3BDDA51}</Project>
+      <Name>DHLS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EHLS\EHLS.csproj">
+      <Project>{2A99F414-EF82-42DC-A431-3516F0222D5F}</Project>
+      <Name>EHLS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advertises.cs" />
+    <Compile Include="Anas.cs" />
+    <Compile Include="Authorizations.cs" />
+    <Compile Include="Calls.cs" />
+    <Compile Include="Catalogs.cs" />
+    <Compile Include="Categories.cs" />
+    <Compile Include="Cities.cs" />
+    <Compile Include="Classes.cs" />
+    <Compile Include="Colors.cs" />
+    <Compile Include="Districts.cs" />
+    <Compile Include="Documents.cs" />
+    <Compile Include="Downloads.cs" />
+    <Compile Include="Emails.cs" />
+    <Compile Include="Flowing.cs" />
+    <Compile Include="FraHLS.cs" />
+    <Compile Include="Groups.cs" />
+    <Compile Include="Houses.cs" />
+    <Compile Include="Locations.cs" />
+    <Compile Include="Logs.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="ModerAuthors.cs" />
+    <Compile Include="Moders.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="Pms.cs" />
+    <Compile Include="Polls.cs" />
+    <Compile Include="Posts.cs" />
+    <Compile Include="ProfileF.cs" />
+    <Compile Include="Projects.cs" />
+    <Compile Include="Properties.cs" />
+    <Compile Include="Reports.cs" />
+    <Compile Include="Results.cs" />
+    <Compile Include="Saves.cs" />
+    <Compile Include="Sets.cs" />
+    <Compile Include="Streets.cs" />
+    <Compile Include="Tracks.cs" />
+    <Compile Include="TransIO.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Violations.cs" />
+    <Compile Include="Votes.cs" />
+    <Compile Include="Wards.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+</Project>

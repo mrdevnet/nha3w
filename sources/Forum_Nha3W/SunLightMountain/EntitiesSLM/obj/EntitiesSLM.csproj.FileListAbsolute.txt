@@ -1,0 +1,10 @@
+D:\SunLightForum\SunLightMountain\EntitiesSLM\bin\Debug\EntitiesSLM.dll
+D:\SunLightForum\SunLightMountain\EntitiesSLM\bin\Debug\EntitiesSLM.pdb
+D:\SunLightForum\SunLightMountain\EntitiesSLM\obj\Debug\ResolveAssemblyReference.cache
+D:\SunLightForum\SunLightMountain\EntitiesSLM\obj\Debug\EntitiesSLM.dll
+D:\SunLightForum\SunLightMountain\EntitiesSLM\obj\Debug\EntitiesSLM.pdb
+D:\HungLocSon\ForumSLMF\SunLightMountain\EntitiesSLM\bin\Debug\EntitiesSLM.dll
+D:\HungLocSon\ForumSLMF\SunLightMountain\EntitiesSLM\bin\Debug\EntitiesSLM.pdb
+D:\HungLocSon\ForumSLMF\SunLightMountain\EntitiesSLM\obj\Debug\ResolveAssemblyReference.cache
+D:\HungLocSon\ForumSLMF\SunLightMountain\EntitiesSLM\obj\Debug\EntitiesSLM.dll
+D:\HungLocSon\ForumSLMF\SunLightMountain\EntitiesSLM\obj\Debug\EntitiesSLM.pdb

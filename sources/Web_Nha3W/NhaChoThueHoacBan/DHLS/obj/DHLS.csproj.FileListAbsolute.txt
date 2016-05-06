@@ -1,0 +1,9 @@
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\DHLS\bin\Debug\DHLS.dll
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\DHLS\bin\Debug\DHLS.pdb
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\DHLS\bin\Debug\EHLS.dll
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\DHLS\bin\Debug\UHLS.dll
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\DHLS\bin\Debug\UHLS.pdb
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\DHLS\bin\Debug\EHLS.pdb
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\DHLS\obj\Debug\ResolveAssemblyReference.cache
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\DHLS\obj\Debug\DHLS.dll
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\DHLS\obj\Debug\DHLS.pdb

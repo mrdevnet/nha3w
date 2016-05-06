@@ -1,0 +1,283 @@
+﻿
+.tblmsg
+{
+	padding: 3px;
+	width : 100%
+}
+
+
+.lnkpagemsg { font-weight: bold; color: #202020; font-size: 9pt; }
+.lnkpagemsg a { color: #000000; text-decoration: none }
+.lnkpagemsg a:hover { color: #6594D5; }
+
+
+.tblcontentmsg 
+{
+	font-family: verdana,Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+	border: solid 1px #3569b5;
+	color: #000000;
+	padding: 0px;
+	background-color: #FFFFFF;
+	width : 100%
+}
+
+.msg1 {
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+}
+
+tr.msg1 a {color:#FFFFFF;text-decoration:none}
+tr.msg1 a:hover	{color:#C0C0FF;text-decoration:none}
+
+.msg2 {
+	background-image: url('../SlmImages/tbl_slm2.png');
+	background-color: #7D8CFF;
+	color: #ffffff;
+	font-weight: bold;
+	height: 28px;
+}
+
+A.msg2lnk
+{
+	color: #ffffff;
+	text-decoration:none;
+	font-size:7.5pt;	
+}
+A.msg2lnk:hover 
+{
+	color: #ffffff;
+	text-decoration: underline;
+	font-size:7.5pt;	
+}
+
+
+.postmsg
+{
+	background-color: #e0e3e9;
+	color:#404040;
+}
+
+.postmsg3
+{
+	background-color: #e0e3e9;
+	color:#404040;
+	padding : 7px
+}
+
+.msgcontent 
+{
+	background-color: #eceff5;
+	color:#404040;
+}
+
+.postmsg2
+{
+	line-height : 17px;
+	font-family : Verdana, Tahoma, Arial;
+	font-size : 12px;
+	padding : 5px
+}
+
+.msgfooter
+{
+    background-color: #eaeaeb;
+    padding-left  : 7px;    
+}
+
+Td.msgfooter2
+{
+    background-color: #eaeaeb;
+    padding-left : 7px;
+    padding-top : 9px;
+    padding-bottom : 6px;
+    text-align : left
+}
+
+.fontmsg
+{ 
+	font-size: 8pt;
+	font-family : Verdana, Arial, Tahoma;
+}
+
+.iconnewpost
+{ 
+	font-size: 8pt;
+	font-family : Tahoma,Verdana, Arial;
+	color : #022463
+}
+
+.msgstep 
+{
+	background-color: #3569b5;
+	height: 2px 
+}
+
+.msgtd2
+{
+	width : 100%;	
+	height : 4px
+}
+
+Td.Rss
+{
+	text-align : right;
+	padding-right : 4px
+}
+
+A.UserBox:link,A.UserBox:active,A.UserBox:visited
+{
+	font-family : Verdana, Arial, Tahoma;
+	color: #3b5998;
+	text-decoration: none;
+	font-size: 10pt;
+} 
+
+A.UserBox:hover
+{
+	font-family : Verdana, Arial, Tahoma;
+    color: #3b5998;
+	text-decoration:underline;
+	font-size:10pt;
+}
+
+Td.PaddLeft
+{
+	padding-left : 5px
+}
+
+.UserPro
+{
+	font-family : Verdana, Tahoma, Arial;
+	font-size : 11px
+}
+
+A.FdwLink:link,A.FdwLink:active,A.FdwLink:visited
+{
+	font-family : Verdana, Arial, Tahoma;
+	color: #3b5998;
+	text-decoration:none;
+	font-size:13px;	
+} 
+
+A.FdwLink:hover
+{
+	font-family : Verdana, Arial, Tahoma;
+    color: #3b5998;
+	text-decoration:underline;
+	font-size:13px;	
+}
+
+A.FLk21:link,A.FLk21:active,A.FLk21:visited
+{
+	font-family : Verdana, Arial, Tahoma;
+	color: #3b5998;
+	text-decoration:underline;
+	font-size:11px;
+} 
+
+A.FLk21:hover
+{
+	font-family : Verdana, Arial, Tahoma;
+    color: #3b5998;
+	text-decoration:none;
+	font-size:11px;
+}
+
+.QuickReply
+{
+	background-color: #eceff5;
+	color:#404040;
+}
+
+input.btnReply{background:#EEF5FF;}
+
+
+.JumperList
+{ 
+	font-size: 9pt;
+	font-family : Verdana, Arial, Tahoma;
+}
+
+
+.AccessForum
+{ 
+	font-size: 7.5pt;
+	font-family : Verdana, Tahoma, Arial;
+}
+
+.contentq1 {
+	BORDER-RIGHT: #000 1px dotted; 
+	PADDING-RIGHT: 3px; 
+	BORDER-TOP: #000 1px dotted; 
+	PADDING-LEFT: 3px; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	BACKGROUND: url(../slmimages/contentq.gif) #e0e3e9 no-repeat right 50%;
+	PADDING-BOTTOM: 3px; 
+	MARGIN: 8px 8px 0px; 
+	BORDER-LEFT: #3569b5 5px solid; 
+	COLOR: #000; 
+	PADDING-TOP: 3px; 
+	BORDER-BOTTOM: 0px
+}
+
+.find1
+{
+	margin-left: 16px;
+	padding-left: 16px;	
+}
+
+
+.postannount
+{
+	line-height : 15px;
+	font-family : Tahoma, Verdana, Arial;
+	font-size : 12px;
+	padding : 5px
+}
+
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+
+.widthfieldset
+{
+	padding-left : 80px;
+	padding-right : 80px
+}
+
+.postPoll
+{
+	font-family : Tahoma, Verdana, Arial;
+	font-size : 12px;
+}
+
+A.RatePoints:link,A.RatePoints:active,A.RatePoints:visited
+{
+	font-family : Verdana, Arial, Tahoma;
+	color: #3b5998;
+	text-decoration:none;
+	font-size:11px;	
+} 
+
+A.RatePoints:hover
+{
+	font-family : Verdana, Arial, Tahoma;
+    color: #3b5998;
+	text-decoration:underline;
+	font-size:11px;	
+}
+
+.Sponsor
+{
+	line-height : 17px;
+	font-family : Verdana, Tahoma, Arial;
+	font-size : 12px;
+	padding : 12px
+}
+
+

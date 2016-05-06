@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{730A8804-569D-4D52-A3E3-E67A380A3248}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EntitiesSLM</RootNamespace>
+    <AssemblyName>EntitiesSLM</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="AdminGroup.cs" />
+    <Compile Include="Advertises.cs" />
+    <Compile Include="Alarm.cs" />
+    <Compile Include="Analytics.cs" />
+    <Compile Include="Avatar.cs" />
+    <Compile Include="BlockIP.cs" />
+    <Compile Include="BlockMember.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Em.cs" />
+    <Compile Include="EReports.cs" />
+    <Compile Include="Forum.cs" />
+    <Compile Include="ForumReport.cs" />
+    <Compile Include="ForumType.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="Information.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="MemberAuthorize.cs" />
+    <Compile Include="MemberProfile.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Moderator.cs" />
+    <Compile Include="PagerF.cs" />
+    <Compile Include="Pm.cs" />
+    <Compile Include="Poll.cs" />
+    <Compile Include="Priority.cs" />
+    <Compile Include="Profile.cs" />
+    <Compile Include="RateType.cs" />
+    <Compile Include="Rating.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="RssFeed.cs" />
+    <Compile Include="SearchMe.cs" />
+    <Compile Include="Sponsor.cs" />
+    <Compile Include="Topic.cs" />
+    <Compile Include="Vote.cs" />
+  </ItemGroup>
+</Project>

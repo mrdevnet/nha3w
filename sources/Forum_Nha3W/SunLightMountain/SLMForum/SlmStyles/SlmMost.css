@@ -1,0 +1,135 @@
+﻿
+.tblMost
+{
+	font-family: verdana,Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+	border: solid 1px #3569b5;
+	color: #000000;
+	padding: 0px;
+	background-color: #FFFFFF;
+	width: 100%
+}
+
+.TopMost {
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+}
+
+tr.TopMost a		{color:#FFFFFF;text-decoration:none}
+tr.TopMost a:hover	{color:#C0C0FF;text-decoration:none}
+
+
+.TopMost2 {
+	background-image: url('../SlmImages/tbl_slm2.png');
+	background-color: #7D8CFF;
+	color: #386906;
+	font-weight: bold;
+	height: 28px;
+}
+
+td.TopMost2 a				{color: #386906;text-decoration:none;font-size:7.5pt;}
+td.TopMost2	a:hover	{color: #386906;text-decoration:none;font-size:7.5pt;}
+
+.Mid 
+{
+	background-color: #e0e3e9;
+	color:#404040;	
+}
+
+.Mid2 
+{
+	background-color: #eceff5;
+	color:#404040;
+}
+
+.MostLink
+{
+	font-family : Tahoma, Arial, Verdana;
+	color: #3b5998;
+	font-size:12px;	
+	font-weight : bold;	
+}
+
+.MostLink2
+{
+	font-family : Tahoma, Arial, Verdana;
+	color: #3b5998;
+	font-size:11px;	
+	font-weight : bold;	
+}
+
+Td.MostInfor
+{
+	font-family : Tahoma, Arial, Verdana;
+	font-size:12px;	
+	height : 21px;
+	text-align : right
+}
+
+Td.MostInfor2
+{
+	font-family : Tahoma, Arial, Verdana;
+	font-size:12px;	
+	height : 21px;
+	padding-left : 16px
+}
+
+Td.MostInfor3
+{
+	font-family : Tahoma, Arial, Verdana;
+	font-size:12px;	
+	height : 23px;
+	padding-left : 16px
+}
+
+.MostInfor2
+{
+	font-family : Tahoma, Arial, Verdana;
+	font-size:12px;	
+	height : 21px;
+	padding-left : 8px
+}
+
+.imgMost
+{
+	border : 0px;
+	vertical-align : top
+}
+
+.MostUser
+{
+	font-family : Verdana, Arial, Tahoma;
+	color: #3b5998;	
+	font-size: 10pt;
+}
+
+.MostInfor3
+{
+	font-family : Tahoma, Arial, Verdana;
+	font-size:12px;	
+	height : 21px;	
+}
+
+.MostInfor4
+{
+	font-family : Tahoma, Arial, Verdana;
+	font-size: 11px;
+	color : #ffffff;
+}
+
+.MostInfor5
+{
+	font-family : Tahoma, Arial, Verdana;
+	font-size:12px;	
+	height : 21px;
+}
+
+.MostAnnounce {
+	background-image: url('../SlmImages/tbl_slm2.png');
+	background-color: #7D8CFF;		
+	height: 28px;
+}

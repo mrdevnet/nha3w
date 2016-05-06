@@ -1,0 +1,5 @@
+bin\Debug\UHLS.dll
+bin\Debug\UHLS.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\UHLS.dll
+obj\Debug\UHLS.pdb

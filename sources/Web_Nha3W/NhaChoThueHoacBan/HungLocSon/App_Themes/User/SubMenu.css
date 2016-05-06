@@ -1,0 +1,14 @@
+﻿.SulMn { width:100%; padding:0px; margin:0px; float:left; list-style:none; height:28px; background:#ECEFF5;  font-family: tahoma, arial, verdana, sans-serif;}
+.SulMn li.Stop {display:block; float:left; margin:0px 0px 0px 0px;}
+.SulMn li.Stop a.Stop_link {display:block; float:left; height:28px; line-height:27px; color:#3B5998; text-decoration:none; font-size:13px; font-weight:bold; padding:0 0 0 0px; cursor:pointer;}
+.SulMn li.Stop a.Stop_link span {float:left; display:block; padding:0 10px 0 10px; height:28px;}
+.SulMn li.Stop a.Stop_link:hover {color:#3B5998; background:#627AAD}
+.SulMn li.Stop a.Stop_link:hover span {color:#fff; background:#627AAD}
+
+
+.SulMN li.top {display:block; float:left; margin:-3px 2px 0px 0px;color:#fff;height:31px; background:#627AAD}
+.SulMn li.top a.Stop_link {display:block; float:left; height:31px; line-height:33px;background:#627AAD;margin:-3px 0px 0px 0px; color:#fff; text-decoration:none; font-size:12px; font-weight:bold; padding:0px 10px 0px 10px; cursor:pointer;}
+
+.SulMn li.Stop:hover > a.Stop_link {color:#fff; background:#627AAD; height:28px;margin:0px; }
+.SulMn li.Stop:hover > a.Stop_link span {color:#fff; background:#627AAD; height:28px;margin:0px; }
+

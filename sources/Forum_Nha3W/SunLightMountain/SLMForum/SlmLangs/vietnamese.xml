@@ -1,0 +1,2274 @@
+<?xml version="1.0" ?>
+<root>
+	- <SunLightMountain language="VietNamese" code="Vie">
+	<SlmfLang name="Header">
+		- <!--  Top menu of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software]
+  -->
+		<Element Name="WelHeader" Area="WelcomeGuest">
+			<Report>Chào bạn</Report>
+		</Element>
+		<Element Name="WelHeader" Area="Search">
+			<Report>Tìm kiếm |</Report>
+		</Element>
+		<Element Name="WelHeader" Area="NewPost">
+			<Report> Bài viết mới |</Report>
+		</Element>
+		<Element Name="WelHeader" Area="Member">
+			<Report> Thành viên |</Report>
+		</Element>
+		<Element Name="WelHeader" Area="Personal">
+			<Report> Cá nhân |</Report>
+		</Element>
+		<Element Name="WelHeader" Area="Pm">
+			<Report>Tin nhắn |</Report>
+		</Element>
+		<Element Name="WelHeader" Area="PmNew">
+			<Report>Tin nhắn mới</Report>
+		</Element>
+		<Element Name="WelHeader" Area="Register">
+			<Report> Đăng ký |</Report>
+		</Element>
+		<Element Name="WelHeader" Area="Login">
+			<Report> Đăng nhập |</Report>
+		</Element>
+		<Element Name="WelHeader" Area="Logout">
+			<Report> Thoát |</Report>
+		</Element>
+		<Element Name="WelHeader" Area="ForumName">
+			<Report>Nhà 3W</Report>
+		</Element>
+	- </SlmfLang>
+	<SlmfLang name="Footer">
+		- <!--  Footer menu of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+	-->
+		<Element Name="CopyrightFoot" Area="F9Light">
+			<Report>Nhà 3W - Kết nối - Xanh - Hiện đại</Report>
+		</Element>
+		<Element Name="TitleOfPage" Area="F9Light">
+			<Report>Nhà 3W - Kết nối - Xanh - Hiện đại</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Register">
+			- <!--  Register panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+	-->
+		<Element Name="SLMF_Reg" Area="Title">
+			<Report>Đăng ký Tài khoản thành viên</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="Details">
+			<Report>Thông tin Đăng ký</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="UserName">
+			<Report>Tài Khoản :</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="CheckExist">
+			<Report>(Đã đăng ký ?)</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="Password">
+			<Report>Mật mã :</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="ReEnterPass">
+			<Report>Nhập lại Mật mã :</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="Email">
+			<Report>Địa chỉ Email :</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="Profile">
+			<Report>Thông tin cá nhân</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="FullName">
+			<Report>Tên đầy đủ :</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="Location">
+			<Report>Đến từ :</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="Website">
+			<Report>Website cá nhân :</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="SecurTitle">
+			<Report>Thông tin bảo mật website</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="Security">
+			<Report>Nhập mã bảo mật :</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="Refresh">
+			<Report>(Thử hình khác)</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="Register">
+			<Report>Đăng ký</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="Cancel">
+			<Report>Quay lại</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="DisallowName">
+			<Report>Tài khoản không hợp lệ</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="UserNameExists">
+			<Report>Tài khoản đã đăng ký</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="UserFull">
+			<Report>Tài khoản hợp lệ</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="SecurityNull">
+			<Report>Mã bảo mật chưa được nhập</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="SecurityIncorrect">
+			<Report>Mã bảo mật chưa chính xác</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="InforRequired">
+			<Report>Thông tin chưa đầy đủ</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="PasswordNotSame">
+			<Report>Mật mã nhập lại chưa trùng</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="PasswordLength">
+			<Report>Mật mã phải ít nhất từ 6 đến 12 ký tự</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="EmailIncorrect">
+			<Report>Địa chỉ Email không hợp lệ</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="AllowSingup">
+			<Report>Diễn đàn hiện nay chưa cho phép đăng ký thêm thành viên mới</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="EmailExists">
+			<Report>Địa chỉ Email trên đã được sử dụng. Bạn có thể sử dụng chức năng "Quên mật khẩu" để lấy mật khẩu mới.</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="RegisterSuccessful">
+			<Report>Bạn đã đăng ký thành viên thành công</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="MemberTitle">
+			<Report>Lơ tơ mơ</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="GroupGuest">
+			<Report>Khách truy cập</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="UserGuest">
+			<Report>Khách</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="FullNameGuest">
+			<Report>Khách truy cập</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="LocationGuest">
+			<Report>World of bits</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="GuestTitle">
+			<Report>Thành viên không chính thức</Report>
+		</Element>
+		<Element Name="SLMF_Reg" Area="MemberCreated">
+			<Report>Tài khoản {0} của bạn đã được đăng ký thành công.</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Login">
+		- <!--  Login panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] -->
+		<Element Name="SLMF_Log" Area="Title">
+			<Report>Đăng nhập vào Diễn đàn</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="UserName">
+			<Report>Tài Khoản :</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="Password">
+			<Report>Tài Khoản :</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="AutoLog">
+			<Report>Lưu tài khoản :</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="AutoTool">
+			<Report>Nhớ mật khẩu cho lần truy cập sau</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="SecurTitle">
+			<Report>Thông tin bảo mật website</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="Security">
+			<Report>Nhập mã bảo mật :</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="Refresh">
+			<Report>(Thử hình khác)</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="Login">
+			<Report>Đăng nhập</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="LostPassword">
+			<Report>Quên mật khẩu</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="InforRequired">
+			<Report>Tài khoản và mật khẩu chưa cung cấp</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="UserNotExists">
+			<Report>Tài khoản này không tồn tại. Bạn có thể Đăng ký một Tài khỏan mới</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="NotAllowLogin">
+			<Report>Hệ thống hiện nay chưa cho phép đăng nhập vào diễn đàn.</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="Banned">
+			<Report>Tài khoản của bạn đã bị khóa. Bạn không được phép đăng nhập vào diễn đàn.</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="EnableLogin">
+			<Report>Tài khoản của bạn cần chờ duyệt trước khi đăng nhập vào diễn đàn.</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="PassIncorrect">
+			<Report>Mật khẩu của thành viên này chưa đúng. Bạn cần kiểm tra lại.</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="IsActivated">
+			<Report>Tài khoản của bạn chưa kích hoạt. Email kích hoạt Tài khoản đã được gửi đến Email bạn dùng đăng ký.</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="LoginSuccess">
+			<Report>Tài khoản đăng nhập thành công.</Report>
+		</Element>
+		<Element Name="SLMF_Log" Area="IPIsLocked">
+			<Report>Vì một lý do nào đó, địa chỉ IP của bạn đã bị khoá! Bạn không có quyền truy cập website này. Vui lòng liên hệ Administrator để được hỗ trợ!</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Forum">
+		- <!--  Forum panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] -->
+		<Element Name="SLMF_Forum" Area="Forum">
+			<Report>Diễn đàn</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="ForumInForum">
+			<Report>Chuyên mục</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="Topics">
+			<Report>Chủ đề</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="Posts">
+			<Report>Bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="LastPost">
+			<Report>Bài viết mới</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="NotHaveForum">
+			<Report>Chưa có bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="Moderator">
+			<Report>Điều hành: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="SubForum">
+			<Report>Chuyên mục: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="Point">
+			<Report>,</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="TotalTocpicSub">
+			<Report>Chủ đề: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="TotalMessSub">
+			<Report>Bài viết: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="Today">
+			<Report>Hôm nay </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="Yesterday">
+			<Report>Hôm qua </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="TimeZone">
+			<Report> GMT + 7</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="LenghtString">
+			<Report>40</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="Space">
+			<Report> » </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="Announcement">
+			<Report>Thông báo: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="AnnounceViews">
+			<Report>Lần xem: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="ShowAnnouncement">
+			<Report>Xem Thông báo</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="GoToNewPost">
+			<Report>Xem bài viết mới nhất</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="AnnounceTitle">
+			<Report>Thông báo: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="SubTile">
+			<Report>Chuyên mục: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="Statistic">
+			<Report>Thông tin diễn đàn</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="UserOnline">
+			<Report>Thành viên Online</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="Stats">
+			<Report>Thống kê diễn đàn</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="ForumN">
+			<Report>Bài Mới</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="ForumNDesc">
+			<Report>Diễn đàn Có Bài Mới</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="ForumN2">
+			<Report>Không Có Bài Mới</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="ForumN2Desc">
+			<Report>Diễn đàn Không Có Bài Mới</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="JumpTo">
+			<Report>Di chuyển nhanh: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="SelectForum">
+			<Report>Chọn diễn đàn chuyển đến</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="VLF">
+			<Report>Diễn đàn chính</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="TotalOnlines">
+			<Report>Số người dùng đang trực tuyến:</Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="TotalGuests">
+			<Report>Khách: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="TotalMembers">
+			<Report>Thành viên: </Report>
+		</Element>
+		<Element Name="SLMF_Forum" Area="LoginToView">
+			<Report>Bài viết trong mục này chỉ dành cho Thành viên! Bạn cần đăng nhập để xem.</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Topic">
+		- <!--  Topic panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] -->
+		<Element Name="SLMF_Topic" Area="Topic">
+			<Report>Chủ đề</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="TopicStarter">
+			<Report>Người gửi</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Reply">
+			<Report>Trả lời</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="View">
+			<Report>Lần xem</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="NewPost">
+			<Report>Bài viết mới</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CreateNewTopic">
+			<Report>Gửi Chủ đề mới</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="UserName">
+			<Report>Thành viên: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Subject">
+			<Report>Tiêu đề: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Priority">
+			<Report>Ưu tiên: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="PriNormal">
+			<Report>Bình thường </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="ProSticky">
+			<Report>Chú ý </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CreatePoll1">
+			<Report>Tạo bình chọn (mở rộng)</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CreatePoll2">
+			<Report>Tạo bình chọn (đóng lại)</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="QuestionPoll">
+			<Report>Câu hỏi Bình chọn: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Choice1">
+			<Report>Lựa chọn 1: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Choice2">
+			<Report>Lựa chọn 2: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Choice3">
+			<Report>Lựa chọn 3: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Choice4">
+			<Report>Lựa chọn 4: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Choice5">
+			<Report>Lựa chọn 5: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Choice6">
+			<Report>Lựa chọn 6: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Choice7">
+			<Report>Lựa chọn 7: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Choice8">
+			<Report>Lựa chọn 8: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Choice9">
+			<Report>Lựa chọn 9: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="PollExpire">
+			<Report>Thời hạn Bình chọn: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="PollExpain">
+			<Report>(Để trống ô này nếu Không giới hạn thời gian)</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Message">
+			<Report>Nội dung bài viết: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Option">
+			<Report>Tùy chọn: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="AddSignature">
+			<Report>Kèm chữ ký dưới bài viết (Có thể thay đổi chữ ký trong phần Thông tin Cá nhân)</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="btnPreview">
+			<Report>Xem trước</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="btnSubmit">
+			<Report>Gửi bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="btnBack">
+			<Report>Quay lại</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Preview">
+			<Report>Nội dung</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="AltSticky">
+			<Report>[ Chú ý ]</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="AltSticky2">
+			<Report>Chú ý</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Top">
+			<Report>[Up]</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="TitleMsg">
+			<Report>Trả lời : </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="PrevTopic">
+			<Report>Chủ đề trước</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="NextTopic">
+			<Report>Chủ đề tiếp theo</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Browsing">
+			<Report>Thành viên đang xem</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="ShowFrom">
+			<Report>Xem từ: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="IconTopicNew">
+			<Report>Có bài mới</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="IconTopic">
+			<Report>Không có bài mới</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="IconNewLocked">
+			<Report>Có bài mới (Đã khóa)</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="IconLocked">
+			<Report>Không có bài mới (Đã khóa)</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="IconAnnouncement">
+			<Report>Thông báo</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="IconSticky">
+			<Report>Chú ý</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="IconMoved">
+			<Report>Đã chuyển</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="IconPoll">
+			<Report>Bình chọn</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanPost">
+			<Report>Bạn {0}có thể{1} gửi bài viết mới</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanNotPost">
+			<Report>Bạn {0}không thể{1} gửi bài viết mới</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanReply">
+			<Report>Bạn {0}có thể{1} trả lời bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanNotReply">
+			<Report>Bạn {0}không thể{1} trả lời bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanDelete">
+			<Report>Bạn {0}có thể{1} xóa bài viết của bạn</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanNotDelete">
+			<Report>Bạn {0}không thể{1} xóa bài viết của bạn</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanEdit">
+			<Report>Bạn {0}có thể{1} chỉnh sửa bài viết của bạn</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanNotEdit">
+			<Report>Bạn {0}không thể{1} chỉnh sửa bài viết của bạn</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanPoll">
+			<Report>Bạn {0}có thể{1} tạo bình chọn</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanNotPoll">
+			<Report>Bạn {0}không thể{1} tạo bình chọn</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanVote">
+			<Report>Bạn {0}có thể{1} bình chọn</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CanNotVote">
+			<Report>Bạn {0}không thể{1} bình chọn</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="TimeNow">
+			<Report>Giờ hiện tại: </Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Sort0">
+			<Report>- - Sắp xếp theo - -</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Sort1">
+			<Report>Cách đây 2 ngày</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Sort2">
+			<Report>Cách đây 1 tuần</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Sort3">
+			<Report>Cách đây 1 tháng</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Sort4">
+			<Report>Cách đây 3 tháng</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Sort5">
+			<Report>Cách đây 6 tháng</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Sort6">
+			<Report>Cách đây 1 năm</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="Sort7">
+			<Report>Tất cả</Report>
+		</Element><Element Name="SLMF_Topic" Area="Sort7">
+			<Report>Tất cả</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="MoveTopic">
+			<Report>Di chuyển Chủ đề bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="MoveRelation">
+			<Report>Giữ nguyên bản gốc</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="NotMoveRelation">
+			<Report>Không giữ bản gốc</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="MoveOldLink">
+			<Report>Link cũ</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="MoveAgree">
+			<Report>Đồng ý</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="MoveClose">
+			<Report>Đóng lại</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="TopicMoved">
+			<Report>[ Đã chuyển ]</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="MoveUpdated">
+			<Report>Chủ đề đã được chuyển sang box khác</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="MoveForum">
+			<Report>Box chuyển đến chưa đúng</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="MoveBack">
+			<Report>( Quay trở lại )</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="CloseAndRefresh">
+			<Report>( Đóng và xem lại )</Report>
+		</Element>
+		<Element Name="SLMF_Topic" Area="NotHaveSetCurrent">
+			<Report>Bạn không có quyền thực hiện chức năng này! Hoặc bạn chưa đăng nhập?</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Message">
+		- <!--  Message panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] -->
+		<Element Name="SLMF_Message" Area="IsHided">
+			<Report>Bài viết đang chờ duyệt để hiển thị</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Edited">
+			<Report>Sửa đổi bởi:</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="HomePage">
+			<Report>Website cá nhân</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Blog">
+			<Report>Blog của thành viên</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Yahoo">
+			<Report>Chat qua YM</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Email">
+			<Report>Gửi Email đến thành viên</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="ICQ">
+			<Report>Trang cá nhân ICQ</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Rank">
+			<Report>Cấp bậc: </Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Joined">
+			<Report>Tham gia: </Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Posts">
+			<Report>Bài viết: </Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Location">
+			<Report>Đến từ: </Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Online">
+			<Report>hiện đang online</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Offline">
+			<Report>đã offline</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Report">
+			<Report>Báo bài viết vi phạm</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="PM">
+			<Report>Gửi thư cá nhân</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="MSN">
+			<Report>MSN Messenger: </Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="AIM">
+			<Report>AOL Messenger: </Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="IsApproved">
+			<Report>Cần được duyệt</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Approved">
+			<Report>Duyệt bài viết này</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="QuickReply">
+			<Report>Trả lời nhanh</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="CreateReplyMessage">
+			<Report>Trả lời Bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="ReplyTitle">
+			<Report>Trả lời: </Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="EditMessage">
+			<Report>Sửa Bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="DeletePost">
+			<Report>Bạn có đồng ý xóa bài viết này không ?</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="DeleteTopic">
+			<Report>Bạn có đồng ý xóa chủ đề này không ?</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="Sponsor">
+			<Report>Nhà tài trợ</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="AskDeleteTopic">
+		  <Report>Bạn có đồng ý xoá chủ đề này không ?</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="AskLockTopic">
+			<Report>Bạn có đồng ý khoá chủ đề này không ?</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="AskUnLockTopic">
+			<Report>Bạn có đồng ý mở lại chủ đề này không ?</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="TopicClosed">
+			<Report>Chủ đề đã khoá</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="ConfirmIsAppro">
+			<Report>Bạn muốn ẩn bài viết này chứ ?</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="ConfirmAppro">
+			<Report>Bạn cho phép hiển thị bài viết này ?</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="MaxMessage">
+			<Report>Bài viết phải có ít nhất {0} ký tự! Bài viết của bạn chưa hợp lệ.</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="AskThanks">
+			<Report>Bạn muốn cảm ơn thành viên này phải không ?</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="UsersThank">
+			<Report>Những thành viên sau đã cảm ơn {0} vì bài viết hữu ích này:</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="CountThank">
+			<Report>Cảm ơn: {0} lần</Report>
+		</Element>
+		<Element Name="SLMF_Message" Area="CountThanked">
+			<Report>Được Cảm ơn: {0} lần</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Profile">
+		- <!--  Profile panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_Profile" Area="Personal">
+			<Report>Hồ sơ cá nhân</Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Information">
+			<Report>Thông tin cá nhân</Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="NewMessages">
+			<Report>Bài viết mới nhất</Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Static">
+			<Report>Thống kê Diễn đàn</Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Signature">
+			<Report>Chữ ký thành viên</Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="FullName">
+			<Report>Họ và tên: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Email">
+			<Report>Email: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Birthday">
+			<Report>Ngày sinh: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="HomePage">
+			<Report>Website: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Location">
+			<Report>Đến từ: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Yahoo">
+			<Report>Yahoo: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="MSN">
+			<Report>MSN: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="ICQ">
+			<Report>ICQ: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="AIM">
+			<Report>AIM: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Blog">
+			<Report>Blog: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Interests">
+			<Report>Sở thích: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Job">
+			<Report>Nghề nghiệp: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="JoinUs">
+			<Report>Tham gia: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="TotalPosts">
+			<Report>Số Bài viết: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Online">
+			<Report>Trạng thái: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="NewestPost">
+			<Report>Bài viết mới nhất: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="LastLogin">
+			<Report>Lần Đăng nhập cuối: </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="EmailTo">
+			<Report>Email đến </Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="UserOnline">
+			<Report> Đang online</Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="UserOffline">
+			<Report> đã offline</Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="LastPosted">
+			<Report>Chưa có bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Started">
+			<Report>{+}</Report>
+		</Element>
+		<Element Name="SLMF_Profile" Area="Finished">
+			<Report>đến</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Announcement">
+			- <!--  Profile panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_Announce" Area="NewAnnounce">
+			<Report>Thông báo mới nhất</Report>
+		</Element>
+		<Element Name="SLMF_Announce" Area="Detail">
+			<Report>[Chi tiết...]</Report>
+		</Element>
+		<Element Name="SLMF_Announce" Area="NumberOfDetail">
+			<Report>614</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="UserOnline">
+		- <!--  Profile panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_Online" Area="WhoisOnline">
+			<Report>Thành viên Đang Online</Report>
+		</Element>
+		<Element Name="SLMF_Online" Area="User">
+			<Report>Thành viên</Report>
+		</Element>
+		<Element Name="SLMF_Online" Area="Action">
+			<Report>Đang làm gì</Report>
+		</Element>
+		<Element Name="SLMF_Online" Area="LastAction">
+			<Report>Vào lúc</Report>
+		</Element>
+		<Element Name="SLMF_Online" Area="TimeOfOnline">
+			<Report>Thời gian Online</Report>
+		</Element>
+		<Element Name="SLMF_Online" Area="ForumView">
+			<Report>Đang xem Diễn đàn: </Report>
+		</Element>
+		<Element Name="SLMF_Online" Area="TopicView">
+			<Report>Đang xem Chủ đề: </Report>
+		</Element>
+		<Element Name="SLMF_Online" Area="Unknow">
+			<Report>Đang làm gì đó</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="SearchActive">
+		- <!--  Profile panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_Active" Area="NewTopic">
+			<Report>Chủ đề có bài mới</Report>
+		</Element>
+		<Element Name="SLMF_Active" Area="Topic">
+			<Report>Chủ đề</Report>
+		</Element>
+		<Element Name="SLMF_Active" Area="Forum">
+			<Report>Diễn đàn</Report>
+		</Element>
+		<Element Name="SLMF_Active" Area="Author">
+			<Report>Người gửi</Report>
+		</Element>
+		<Element Name="SLMF_Active" Area="Reply">
+			<Report>Trả lời</Report>
+		</Element>
+		<Element Name="SLMF_Active" Area="View">
+			<Report>Lần xem</Report>
+		</Element>
+		<Element Name="SLMF_Active" Area="LastPost">
+			<Report>Bài viết mới</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="ListMember">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+	-->
+		<Element Name="SLMF_Members" Area="ListMembers">
+			<Report>Danh sách thành viên</Report>
+		</Element>
+		<Element Name="SLMF_Members" Area="Contact">
+			<Report>Liên hệ</Report>
+		</Element>
+		<Element Name="SLMF_Members" Area="UserName">
+			<Report>Thành viên</Report>
+		</Element>
+		<Element Name="SLMF_Members" Area="GroupName">
+			<Report>Cấp bậc</Report>
+		</Element>
+		<Element Name="SLMF_Members" Area="Posts">
+			<Report>Bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Members" Area="Join">
+			<Report>Tham gia</Report>
+		</Element>
+		<Element Name="SLMF_Members" Area="LastOnline">
+			<Report>Đăng nhập cuối</Report>
+		</Element>
+		<Element Name="SLMF_Members" Area="Search">
+			<Report>Tìm kiếm</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="SearchPro">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_SearchPro" Area="Result">
+			<Report>Kết quả tìm kiếm</Report>
+		</Element>
+		<Element Name="SLMF_SearchPro" Area="Follow">
+			<Report>Tìm kiếm theo: </Report>
+		</Element>
+		<Element Name="SLMF_SearchPro" Area="At">
+			<Report>Diễn đàn: </Report>
+		</Element>
+		<Element Name="SLMF_SearchPro" Area="Forum">
+			<Report>Trong tất cả Diễn đàn </Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="FastLogin">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_FastLog" Area="User">
+			<Report>Tài khoản</Report>
+		</Element>
+		<Element Name="SLMF_FastLog" Area="Pass">
+			<Report>Mật mã</Report>
+		</Element>
+		<Element Name="SLMF_FastLog" Area="SavePass">
+			<Report>Lưu cho lần đăng nhập sau</Report>
+		</Element>
+		<Element Name="SLMF_FastLog" Area="Login">
+			<Report>Log in</Report>
+		</Element>
+		<Element Name="SLMF_FastLog" Area="Rfv1">
+			<Report>Tài khoản chưa đúng</Report>
+		</Element>
+		<Element Name="SLMF_FastLog" Area="Rfv2">
+			<Report>Mật mã chưa đúng</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Poll">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_Poll" Area="Title">
+			<Report>Bình chọn</Report>
+		</Element>
+		<Element Name="SLMF_Poll" Area="TitleResult">
+			<Report>Kết quả Bình chọn</Report>
+		</Element>
+		<Element Name="SLMF_Poll" Area="Result">
+			<Report>Xem kết quả</Report>
+		</Element>
+		<Element Name="SLMF_Poll" Area="Vote">
+			<Report>Bình chọn</Report>
+		</Element>
+		<Element Name="SLMF_Poll" Area="Voted">
+			<Report>Bạn đã bình chọn.</Report>
+		</Element>
+		<Element Name="SLMF_Poll" Area="Sum">
+			<Report>Tổng số Bình chọn: </Report>
+		</Element>
+		<Element Name="SLMF_Poll" Area="Finished">
+			<Report>Bình chọn này đã kết thúc.</Report>
+		</Element>
+		<Element Name="SLMF_Poll" Area="NotVote">
+			<Report>Bạn không thể bình chọn.</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Rating">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_Rating" Area="Rating">
+			<Report>Đánh giá: </Report>
+		</Element>
+		<Element Name="SLMF_Rating" Area="RatePoint">
+			<Report>{Bình chọn}</Report>
+		</Element>
+		<Element Name="SLMF_Rating" Area="MemberRate">
+			<Report>Thành viên bình chọn</Report>
+		</Element>
+		<Element Name="SLMF_Rating" Area="Member">
+			<Report>Thành viên</Report>
+		</Element>
+		<Element Name="SLMF_Rating" Area="Time">
+			<Report>Ngày</Report>
+		</Element>
+		<Element Name="SLMF_Rating" Area="Vote">
+			<Report>Bình chọn</Report>
+		</Element>
+		<Element Name="SLMF_Rating" Area="NotPermission">
+			<Report>Bạn không có quyền bình chọn ở Box này.</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="UserCP">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_CPUser" Area="ControlPanel">
+			<Report>Quản lý Thông tin Cá nhân</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="YourProfile">
+			<Report>Thông tin Thành viên</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="PersonalMessage">
+			<Report>Tin nhắn Cá nhân</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="PmSent">
+			<Report>Tin nhắn đã gửi</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="PmNew">
+			<Report>Gửi tin nhắn</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="PmInbox">
+			<Report>Hộp thư cá nhân</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="EditProfile">
+			<Report>Cập nhật Hồ sơ</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="EditAvatar">
+			<Report>Đổi hình đại diện</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="Options">
+			<Report>Tùy chọn</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="Signature">
+			<Report>Thay đổi Chữ ký</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="EmailPass">
+			<Report>Email và Mật mã</Report>
+		</Element>
+		<Element Name="SLMF_CPUser" Area="EmailNew">
+			<Report>Gửi Email</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="EditPro">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_EditPro" Area="UserName">
+			<Report>Tài khoản:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="FullName">
+			<Report>Họ và tên:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Email">
+			<Report>Email:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="EmailIsPublished">
+			<Report>Email hiển thị cho người khác thấy</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="EmailIsNotPublished">
+			<Report>Email không hiển thị cho người khác thấy</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="CanSendE">
+			<Report>Đăng ký Nhận Email:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="CanSendE1">
+			<Report>Nhận Email từ thành viên khác</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="CanSendE0">
+			<Report>Không Nhận Email từ thành viên khác</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Website">
+			<Report>Website cá nhân:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Location">
+			<Report>Đến từ:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Yahoo">
+			<Report>Yahoo Messenger:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Blog">
+			<Report>Blog cá nhân:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="MSN">
+			<Report>Msn Messenger:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="ICQNumber">
+			<Report>Mã số ICQ:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="AOL">
+			<Report>AOL:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Interests">
+			<Report>Sở thích:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Job">
+			<Report>Nghề nghiệp:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="AboutMe">
+			<Report>Giới thệu bản thân:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Gender">
+			<Report>Giới tính:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="MemberTitle">
+			<Report>Tiêu đề cá nhân:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Male">
+			<Report>Nam</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Female">
+			<Report>Nữ</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="http">
+			<Report>http://</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Save">
+			<Report>Lưu thông tin</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="Birthday">
+			<Report>Ngày sinh:</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="ReSave">
+			<Report>Thông tin đã được lưu</Report>
+		</Element>
+		<Element Name="SLMF_EditPro" Area="RgeEmail">
+			<Report>Email không hợp lệ</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="EditAvatar">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_Avatar" Area="Avatar">
+			<Report>Hình đại diện:</Report>
+		</Element>
+		<Element Name="SLMF_Avatar" Area="Update">
+			<Report>Cập nhật</Report>
+		</Element>
+		<Element Name="SLMF_Avatar" Area="Category">
+			<Report>Chọn danh mục:</Report>
+		</Element>
+		<Element Name="SLMF_Avatar" Area="Url">
+			<Report>URL của Avatar:</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Pm">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_Pm" Area="From">
+			<Report>Gửi từ:</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="Inbox">
+			<Report>Hộp thư</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="Sent">
+			<Report>Tin nhắn đã gửi</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="SendNew">
+			<Report>Gửi tin nhắn</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="To">
+			<Report>Gửi đến:</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="Find">
+			<Report>Tìm</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="Title">
+			<Report>Tiêu đề:</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="Member">
+			<Report>Người nhận:</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="Clear">
+			<Report>Xóa</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="Require">
+			<Report>Thông tin chưa đầy đủ</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="Successful">
+			<Report>Tin nhắn gửi thành công</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="NotExistMember">
+			<Report>Thành viên này không tồn tại</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="NotAllowLogin">
+			<Report>Thành viên này sẽ không xem được tin nhắn</Report>
+		</Element>
+		<Element Name="SLMF_Pm" Area="PmIsView">
+			<Report>Bạn có tin nhắn mới! Bạn có muốn xem ngay bây giờ không ?</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="Signature">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_Signature" Area="AlwaysSig">
+			<Report>Luôn hiển thị chữ ký dưới bài viết</Report>
+		</Element>
+		<Element Name="SLMF_Signature" Area="Update">
+			<Report>Cập nhật</Report>
+		</Element>
+		<Element Name="SLMF_Signature" Area="Updated">
+			<Report>Cập nhật thành công</Report>
+		</Element>
+		<Element Name="SLMF_Signature" Area="Required">
+			<Report>Thông tin chưa đầy đủ</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="ChangePassword">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_ChangePassword" Area="OldPassword">
+			<Report>Mật mã cũ</Report>
+		</Element>
+		<Element Name="SLMF_ChangePassword" Area="NewPassword">
+			<Report>Mật mã mới</Report>
+		</Element>
+		<Element Name="SLMF_ChangePassword" Area="NewPasswordConfirm">
+			<Report>Nhập lại Mật mã mới</Report>
+		</Element>
+		<Element Name="SLMF_ChangePassword" Area="ChangePass">
+			<Report>Thay đổi mật mã</Report>
+		</Element>
+		<Element Name="SLMF_ChangePassword" Area="Successful">
+			<Report>Mật mã đã thay đổi thành công</Report>
+		</Element>
+		<Element Name="SLMF_ChangePassword" Area="ComparePass">
+			<Report>Mật mã mới nhập lại chưa trùng</Report>
+		</Element>
+		<Element Name="SLMF_ChangePassword" Area="Required">
+			<Report>Thông tin chưa đầy đủ</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="ReportAMessage">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_Report" Area="Title">
+			<Report>Báo bài viết vi phạm</Report>
+		</Element>
+		<Element Name="SLMF_Report" Area="Reason">
+			<Report>Lý do</Report>
+		</Element>
+		<Element Name="SLMF_Report" Area="Detail">
+			<Report>Chi tiết vi phạm</Report>
+		</Element>
+		<Element Name="SLMF_Report" Area="Priority">
+			<Report>Mức độ vi phạm</Report>
+		</Element>
+		<Element Name="SLMF_Report" Area="Sent">
+			<Report>Thông báo của bạn đã gửi đến BQT thành công. Xin cảm ơn.</Report>
+		</Element>
+		<Element Name="SLMF_Report" Area="Form1Validate">
+			<Report>Bạn chưa cung cấp lý do vi phạm</Report>
+		</Element>
+		<Element Name="SLMF_Report" Area="Form2Validate">
+			<Report>Bạn chưa cung cấp chi tiết vi phạm</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="SendAEmail">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_SendAEmail" Area="NotReceiveEmail">
+			<Report>Thành viên này không Đăng ký nhận Email từ người khác.</Report>
+		</Element>
+		<Element Name="SLMF_SendAEmail" Area="Successful">
+			<Report>Email đã gửi thành công.</Report>
+		</Element>
+		<Element Name="SLMF_SendAEmail" Area="NotSuccessful">
+			<Report>Email gửi không thành công. Bạn có thể liên hệ Admin để thông báo lỗi.</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="SearchAdvance">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_SearchAdv" Area="Title">
+			<Report>Tìm kiếm Nâng cao</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="Keyword">
+			<Report>Từ khóa tìm kiếm</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="ByAuthor">
+			<Report>Bởi tác giả</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="ListForum">
+			<Report>Danh mục diễn đàn</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="Keyword2">
+			<Report>Từ khóa</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="ByAuthor2">
+			<Report>Tác giả bài viết</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="FollowTitle">
+			<Report>Tìm theo Chủ đề</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="FollowMsg">
+			<Report>Tìm theo Bài viết</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="FollowForum">
+			<Report>Tìm trong diễn đàn</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="Order">
+			<Report>Sắp xếp theo thời gian</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="OrderAsc">
+			<Report>Thời gian tăng dần</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="OrderDesc">
+			<Report>Thời gian giảm dần</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="SecurityCode">
+			<Report>Nhập mã bảo mật</Report>
+		</Element>
+		<Element Name="SLMF_SearchAdv" Area="SearchButton">
+			<Report>Tìm kiếm theo từ khóa</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="RssFeed">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_RssFeed" Area="LocationHost">
+			<Report>http://code2coder.com/forum</Report>
+		</Element>
+		<Element Name="SLMF_RssFeed" Area="Comment">
+			<Report>This Rss Feed generated by BDS Viet Nam at</Report>
+		</Element>
+		<Element Name="SLMF_RssFeed" Area="Copyright">
+			<Report>Copyright by BDS Viet Nam.</Report>
+		</Element>
+		<Element Name="SLMF_RssFeed" Area="Generator">
+			<Report>Powered by BDS Viet Nam (www.code2coder.com).</Report>
+		</Element>
+		<Element Name="SLMF_RssFeed" Area="ByMember">
+			<Report>bởi:</Report>
+		</Element>
+		<Element Name="SLMF_RssFeed" Area="MyRss">
+			<Report>Rss của tôi:</Report>
+		</Element>
+	</SlmfLang>
+	<SlmfLang name="LostPassword">
+		- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+		<Element Name="SLMF_LostPass" Area="Title">
+			<Report>Lấy lại Mật khẩu mới</Report>
+		</Element>
+		<Element Name="SLMF_LostPass" Area="UserName">
+			<Report>Tài khoản:</Report>
+		</Element>
+		<Element Name="SLMF_LostPass" Area="Email">
+			<Report>Email của Tài khoản:</Report>
+		</Element>
+		<Element Name="SLMF_LostPass" Area="SecurityCode">
+			<Report>Mã bảo mật:</Report>
+		</Element>
+		<Element Name="SLMF_LostPass" Area="ResetPass">
+			<Report>Gửi mật khẩu mới qua Email</Report>
+		</Element>
+		<Element Name="SLMF_LostPass" Area="SentEmail">
+			<Report>Email đã được gửi cho thành viên.</Report>
+		</Element>
+		<Element Name="SLMF_LostPass" Area="EmailIsNotRight">
+			<Report>Địa chỉ Email này không đúng với tài khoản : {0}</Report>
+		</Element>
+		<Element Name="SLMF_LostPass" Area="UserNameIsNotExists">
+			<Report>Tài khoản {0} không tồn tại</Report>
+		</Element>
+		<Element Name="SLMF_LostPass" Area="SecurityIsNotRight">
+			<Report>Mã bảo mật chưa chính xác.</Report>
+		</Element>
+
+		<Element Name="SLMF_LostPass" Area="TitleOfEmail">
+			<Report>Email tao mat khau moi cho tai khoan: {0}</Report>
+		</Element>
+		<Element Name="SLMF_LostPass" Area="MessageOfEmail">
+			<Report>chào bạn {0}Chúng tôi nhận được thông tin yêu cầu {1}tạo lại mật khẩu mới{2} cho tài khoản {3} tại website {4}. Vậy nếu đây là yêu cầu của bạn để tạo lại mật khẩu mới cho tài khoản {5} thì bạn hãy nhấn vào đường link bên dưới để thực hiện yêu cầu của bạn : (Nếu đây không phải là yêu cầu của bạn thì hãy bỏ qua email thông báo này){6}Click vào đây để đổi mật khẩu tài khoản {7} : {8}Email từ website : {9}Cảm ơn,</Report>
+		</Element>
+		</SlmfLang>
+		<SlmfLang name="ResetPass">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_ResetPass" Area="Title">
+				<Report>Tạo mật khẩu mới cho tài khoản của bạn</Report>
+			</Element>
+			<Element Name="SLMF_ResetPass" Area="UserName">
+				<Report>Tài khoản:</Report>
+			</Element>
+			<Element Name="SLMF_ResetPass" Area="Password">
+				<Report>Mật khẩu mới:</Report>
+			</Element>
+			<Element Name="SLMF_ResetPass" Area="RetypePassword">
+				<Report>Nhập lại Mật khẩu mới:</Report>
+			</Element>
+			<Element Name="SLMF_ResetPass" Area="Submit">
+				<Report>Tạo mật khẩu mới</Report>
+			</Element>
+			<Element Name="SLMF_ResetPass" Area="ResetFinish">
+				<Report>Đã tạo xong Mật khẩu mới cho thành viên {0}</Report>
+			</Element>
+			<Element Name="SLMF_ResetPass" Area="NotRight">
+				<Report>Thông tin chưa chính xác. Hoặc có lỗi trong liên kết tạo mật khẩu.</Report>
+			</Element>
+		</SlmfLang>
+		
+		<!--Admin Panel Language-->
+		
+		<SlmfLang name="GeneralA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_GeneralA" Area="Title">
+				<Report>Cấu hình chung</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="System">
+				<Report>Cấu hình Hệ thống</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="Panel">
+				<Report>Admin Panel</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="AdminEmail">
+				<Report>Email của Admin:</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="AllowSignup">
+				<Report>Cho phép Đăng ký:</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="AllowLogin">
+				<Report>Cho phép Đăng nhập:</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="MaxMsg">
+				<Report>Số ký tự tối thiểu:</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="SessionTimeOut">
+				<Report>Thời gian Timeout:</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="GuestSearch">
+				<Report>Khách tìm kiếm? :</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="GuestProfile">
+				<Report>Khách xem Profile? :</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="GuestMember">
+				<Report>Khách xem Member? :</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="HideRecycleBin">
+				<Report>Ẩn thùng rác:</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="ActiveMember">
+				<Report>Kích hoạt thành viên:</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="ReviewMember">
+				<Report>Duyệt bài viết? :</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="TimePostAgain">
+				<Report>Thời gian post lại? :</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="MaxLogin">
+				<Report>Đăng nhập nhiều nhất:</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="SiteStart">
+				<Report>Ngày bắt đầu:</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="Submit">
+				<Report>Lưu thông tin</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="SubmitSuccess">
+				<Report>Lưu thành công.</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="SearchMember">
+				<Report>Tài khoản cấm</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="BlockUserTitle">
+				<Report>Danh sách Tài khoản không cho phép</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="UserName">
+				<Report>Tài khoản:</Report>
+			</Element>
+			<Element Name="SLMF_GeneralA" Area="AddUserName">
+				<Report>Thêm</Report>
+			</Element>
+		</SlmfLang>
+		
+
+		<SlmfLang name="ReportA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_ReportA" Area="Title">
+				<Report>Thông báo</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="Add">
+				<Report>Thêm Thông báo</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="AddReports">
+				<Report>Tiêu đề Thông báo:</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="Contents">
+				<Report>Nội dung:</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="StartDate">
+				<Report>Ngày bắt đầu:</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="FinishDate">
+				<Report>Ngày kết thúc:</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="ShowAll">
+				<Report>Luôn hiển thị:</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="AllForum">
+				<Report>Tất cả các Forum:</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="IsTop">
+				<Report>Hiển thị Top:</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="TotalViews">
+				<Report>Tổng số lần xem:</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="ReportManager">
+				<Report>Quản lý Thông báo</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="ForumId">
+				<Report>Diễn đàn:</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="ReportId">
+				<Report>Thông báo:</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="SelectForumId">
+				<Report>Chọn Diễn đàn cần Thông báo</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="SelectReportId">
+				<Report>Chọn Thông báo</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="CreateFailed">
+				<Report>Thông báo này đã tồn tại ở Diễn đàn đã chọn.</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="UnSelected">
+				<Report>Diễn đàn hoặc Thông báo chưa chọn đúng.</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="UpdateDeleteReport">
+				<Report>Xoá/Sửa Thông báo</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="UpdateReport">
+				<Report>Cập nhật</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="UpdateReport2">
+				<Report>Cập nhật Thông báo</Report>
+			</Element>
+			<Element Name="SLMF_ReportA" Area="UpdateSuccessful">
+				<Report>Cập nhật Thông báo thành công.</Report>
+			</Element>
+
+		</SlmfLang>
+
+		<SlmfLang name="ForumA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_ForumA" Area="Title">
+				<Report>Quản lý Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="AddNew">
+				<Report>Thêm mới Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="Updated">
+				<Report>Cập nhật Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="btnUpdated">
+				<Report>Cập nhật</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="btnUpdatedSuccess">
+				<Report>Cập nhật thành công.</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="Name">
+				<Report>Diễn đàn:</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="Description">
+				<Report>Mô tả:</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="ParForum">
+				<Report>Diễn đàn chính:</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="SelectParForum">
+				<Report>Không Chọn Diễn đàn chính</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="TypeForum">
+				<Report>Kiểu Diễn đàn:</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="SelectTypeForum">
+				<Report>Chọn Kiểu Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="TotalTopics">
+				<Report>Số Chủ đề:</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="TotalMessages">
+				<Report>Số Bài viết:</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="CateId">
+				<Report>Nhóm Diễn đàn:</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="SelectCateId">
+				<Report>Chọn Nhóm Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="SubmitSuccess">
+				<Report>Tạo mới Forum thành công.</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="UnSelectSubForum">
+				<Report>Chưa chọn đúng diễn đàn chính.</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="UnableInfor">
+				<Report>Thông tin chưa đầy đủ.</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="UpdelForums">
+				<Report>Xoá/Sửa Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="SelectCateIdTitle">
+				<Report>Chọn Nhóm Diễn đàn:</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="SelectAllCateId">
+				<Report>Tất cả các Nhóm Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="CategoryMan">
+				<Report>Nhóm Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="CategoryManTitle">
+				<Report>Quản lý Nhóm Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="CategoryName">
+				<Report>Tên Nhóm Diễn đàn:</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="OrderBy">
+				<Report>Vị trí:</Report>
+			</Element>
+			<Element Name="SLMF_ForumA" Area="PrivateForum">
+				<Report>Diễn đàn Cá nhân</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="PrivForumA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_PrivForumA" Area="Title">
+				<Report>Diễn đàn Cá nhân</Report>
+			</Element>
+			<Element Name="SLMF_PrivForumA" Area="Title2">
+				<Report>Chọn Thành viên Quyền Xem Diễn đàn Cá nhân đã chọn</Report>
+			</Element>
+			<Element Name="SLMF_PrivForumA" Area="Title3">
+				<Report>Các Thành viên có Quyền Tham gia Diễn đàn Cá nhân trên</Report>
+			</Element>
+			<Element Name="SLMF_PrivForumA" Area="ChooseMember">
+				<Report>Quyền Xem Diễn đàn Cá nhân:</Report>
+			</Element>
+			<Element Name="SLMF_PrivForumA" Area="ChooseMemberBtn">
+				<Report>Chọn Thành viên này</Report>
+			</Element>
+			<Element Name="SLMF_PrivForumA" Area="UnSelectedForum">
+				<Report>Bạn chưa chọn Diễn đàn Cá nhân.</Report>
+			</Element>
+			<Element Name="SLMF_PrivForumA" Area="SelectedMember">
+				<Report>Thành viên này đã được chọn tham gia Diễn đàn Cá nhân trên.</Report>
+			</Element>
+		</SlmfLang>
+
+		<SlmfLang name="UserA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_UserA" Area="Title">
+				<Report>Quản lý Thành viên / Nhóm</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Search">
+				<Report>Tìm kiếm Thành viên</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="SearchBy">
+				<Report>Tìm theo:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="SearchUser">
+				<Report>Tài khoản</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="SearchFull">
+				<Report>Tên đầy đủ</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="SearchEmail">
+				<Report>Email</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="SearchActivated">
+				<Report>Kích hoạt?</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="SearchLogin">
+				<Report>Đăng nhập?</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="SearchBlock">
+				<Report>Đã bị khoá</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="SearchByGroup">
+				<Report>Tìm theo Nhóm:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="SearchByTitle">
+				<Report>Thành viên / Tên / Email:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Find">
+				<Report>Tìm kiếm</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="AllGroups">
+				<Report>Nhóm thành viên</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="UserName">
+				<Report>Tài khoản:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="MemberTitle">
+				<Report>Tiêu đề:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Avatar">
+				<Report>Hình ảnh đại diện:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Email">
+				<Report>Email:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="FullName">
+				<Report>Họ và tên:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Gender">
+				<Report>Giới tính:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Male">
+				<Report>Nam</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="FeMale">
+				<Report>Nữ</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="UserStatus">
+				<Report>Đang online?:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Online">
+				<Report>Online</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Offline">
+				<Report>Offline</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="DateCreation">
+				<Report>Tham gia:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="IsActivated">
+				<Report>Đã kích hoạt?:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Activated">
+				<Report>Đã kích hoạt</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="NotActivated">
+				<Report>Chưa kích hoạt</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="EnableLogin">
+				<Report>Đăng nhập?:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="CanLogin">
+				<Report>Có thể Đăng nhập</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="NotCanLogin">
+				<Report>Không thể Đăng nhập</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="AboutMe">
+				<Report>Giới thiệu:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Interests">
+				<Report>Sở thích:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Job">
+				<Report>Nghề nghiệp:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Location">
+				<Report>Đến từ:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Birthday">
+				<Report>Ngày sinh:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Yahoo">
+				<Report>Nick Yahoo(YIM):</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="AIM">
+				<Report>AIM:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="ICQ">
+				<Report>ICQ:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="MSN">
+				<Report>MSN:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Blog">
+				<Report>Blog:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="HomePage">
+				<Report>Website cá nhân:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Signature">
+				<Report>Chữ ký:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="AlwaysSig">
+				<Report>Luôn hiện chữ ký:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="YesAlwaysSig">
+				<Report>Luôn luôn</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="NoAlwaysSig">
+				<Report>Tuỳ chọn</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="IP">
+				<Report>IP Address:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="IsEmailPublished">
+				<Report>Hiển thị Email:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="YesPublished">
+				<Report>Công cộng</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="NoPublished">
+				<Report>Cá nhân</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="CanSendE">
+				<Report>Muốn nhận Email?:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="ReceiveMail">
+				<Report>Muốn nhận Email</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="NotReceiveMail">
+				<Report>Không nhận Email</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="TotalPosts">
+				<Report>Số bài viết:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="CountLostPass">
+				<Report>Quên mật khẩu:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="LastLogin">
+				<Report>Đăng nhập cuối:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="LastBrowse">
+				<Report>Xem bài viết:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Posted">
+				<Report>Gửi bài mới:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="BlockUser">
+				<Report>Khoá tài khoản</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="CloseBlock">
+				<Report>Đóng lại</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="ExpandIp">
+				<Report>Khoá IP</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="CloseIp">
+				<Report>Đóng lại</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="BlockIpDate">
+				<Report>Vào lúc:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="Updated">
+				<Report>Cập nhật</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="BlockStart">
+				<Report>Bắt đầu từ:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="BlockFinish">
+				<Report>Đến:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="BlockReason">
+				<Report>Lý do:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="BlockStatus">
+				<Report>Trạng thái:</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="YesBlock">
+				<Report>Đã Khoá</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="NoBlock">
+				<Report>Không Khoá</Report>
+			</Element>
+			<Element Name="SLMF_UserA" Area="SaveSuccess">
+				<Report>Lưu thành công.</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="GroupA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_GroupA" Area="Title">
+				<Report>Thêm Nhóm Thành viên</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="GetPosts">
+				<Report>Số bài viết yêu cầu:</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="RankImage">
+				<Report>Hình ảnh:</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="PmLimit">
+				<Report>Số Tin nhắn có thể gửi:</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="AddGroup">
+				<Report>Thêm nhóm</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="GroupManager">
+				<Report>Quản lý nhóm</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="NotDeleted">
+				<Report>Nhóm Thành viên trên không được xoá.</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="File1">
+				<Report>Chọn File 1:</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="File2">
+				<Report>Chọn File 2:</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="File3">
+				<Report>Chọn File 3:</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="UploadFile">
+				<Report>Upload</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="CloseFile">
+				<Report>Đóng</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="UploadImgRank">
+				<Report>Upload hình ảnh nhóm</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="UploadAvatar">
+				<Report>Upload hình đại diện</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="UploadSuccess">
+				<Report>Upload thành công.</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="SelectRankImage">
+				<Report>Chọn hình ảnh Nhóm:</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="SelectRankImage2">
+				<Report>Chọn hình đại diện Nhóm</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="Refresh">
+				<Report>Reload</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="CreateSuccess">
+				<Report>Tạo mới Nhóm thành công.</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="UpdateGroup">
+				<Report>Cập nhật</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="UpdateGroupTitle">
+				<Report>Cập nhật Nhóm thành viên</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="UpdateGroupSuccess">
+				<Report>Cập nhật thành công.</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="SelectAGroup">
+				<Report>Chọn Nhóm thành viên</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="MbrIsGrps">
+				<Report>Thành viên thuộc các Nhóm</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="SelectAGroup2">
+				<Report>Chọn Nhóm #:</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="AddGrp4MbrTitle">
+				<Report>Thêm Nhóm cho Thành viên</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="AddGrp4MbrTitle2">
+				<Report>Thêm Nhóm #:</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="AddGrp4Mbr">
+				<Report>Thêm</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="AddGrp4MbrFailed">
+				<Report>Thành viên trên đã thuộc Nhóm này.</Report>
+			</Element>
+			<Element Name="SLMF_GroupA" Area="AddGrp4MbrSuccess">
+				<Report>Thêm Nhóm thành công.</Report>
+			</Element>
+			
+		</SlmfLang>
+		<SlmfLang name="AlarmA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_AlarmA" Area="Title">
+				<Report>Bài viết vi phạm</Report>
+			</Element>
+			<Element Name="SLMF_AlarmA" Area="PriorityTitle">
+				<Report>Mức độ vi phạm</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="ViewOnA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_ViewOnA" Area="Title">
+				<Report>Thống kê Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_ViewOnA" Area="TitleOnline">
+				<Report>Thống kê Online</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="ViewBlockMember">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_ViewBlockMember" Area="Title">
+				<Report>Khoá tài khoản</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="ViewBlockIP">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_ViewBlockIP" Area="Title">
+				<Report>Khoá Địa chỉ IP</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="AddBanners">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_AddBanners" Area="Title">
+				<Report>Banner Quảng cáo</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="Details">
+				<Report>Chi tiết Banner</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="Insert">
+				<Report>Thêm</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="Updated">
+				<Report>Cập nhật</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="Description">
+				<Report>Mô tả:</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="PositionsOfBanner">
+				<Report>Banner đặt tại các Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="ChooseForum">
+				<Report>Forum đặt Banner:</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="ChooseForumDDl">
+				<Report>Chọn Forum cần đặt Banner</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="ChooseForumDDl2">
+				<Report>Đặt Banner ở Forum #:</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="LbtExpand">
+				<Report>Chèn Banner ở Forum khác</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="LbtClose">
+				<Report>Đóng lại</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="UpdatedSuccess">
+				<Report>Cập nhật thành công.</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="ExistsForumSponsor">
+				<Report>Banner đã được chèn ở forum này.</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="InsertFrmSpnSuccess">
+				<Report>Đã chèn Banner ở Forum được chọn.</Report>
+			</Element>
+			<Element Name="SLMF_AddBanners" Area="SelectedGroup">
+				<Report>Chỉ chèn Banner ở các Forum.</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="PermissionGrpFrmA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="PermissionGrpFrmA" Area="Title">
+				<Report>Cài đặt Quyền cho Nhóm</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Yes">
+				<Report>Có</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="No">
+				<Report>Không</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Post">
+				<Report>Tạo mới chủ đề:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Reply">
+				<Report>Trả lời bài viết:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Poll">
+				<Report>Tạo Bình chọn:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Vote">
+				<Report>Bình chọn:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Rate">
+				<Report>Đánh giá thành viên:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="ViewPro">
+				<Report>Xem thông tin Thành viên:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Upload">
+				<Report>Upload Files:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="SizeUpload">
+				<Report>Kích cỡ Files Upload:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Kb">
+				<Report>Kbs/1 File</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Approve">
+				<Report>Cần duyệt bài viết? :</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Edit">
+				<Report>Chỉnh sửa bài viết:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="DelMsg">
+				<Report>Xoá bài viết:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="DelTopic">
+				<Report>Xoá chủ đề:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Lock">
+				<Report>Khoá chủ đề:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Sticky">
+				<Report>Đánh dấu [Chú ý] Bài viết:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Move">
+				<Report>Di chuyển Chủ đề:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Quote">
+				<Report>Đính kèm bài viết:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Forward">
+				<Report>Lưu bài viết:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Pm">
+				<Report>Gửi tin nhắn cá nhân:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Em">
+				<Report>Gửi Email:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="UnLock">
+				<Report>Mở Khoá Chủ đề:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="ApproAuthor">
+				<Report>Duyệt Bài viết khác:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="ViewIp">
+				<Report>Xem IP thành viên:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="RptAuthor">
+				<Report>Báo bài viết vi phạm:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Default4All">
+				<Report>Mặc định Thiết lập này:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Default4All2">
+				<Report>Cho Tất cả các Nhóm Thành viên khác</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Insert">
+				<Report>Thiết lập mới</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="Update">
+				<Report>Cập nhật</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="pnlGroups">
+				<Report>Các nhóm có Quyền truy cập diễn đàn trên</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="pnlPermissionGroup">
+				<Report>Thiết lập Quyền cho Nhóm thành viên trên</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="AddNew4Grp">
+				<Report>Thêm Quyền cho Nhóm khác:</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="UpdatePermissionSuccess">
+				<Report>Cập nhật lại Quyền cho Nhóm thành công.</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="InsertPermissionSuccess">
+				<Report>Thiết lập Quyền cho Nhóm mới thành công.</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="InsertPermissionFailed">
+				<Report>Quyền cho Nhóm trên Đã được thiết lập trước đó.</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="PermissOfMembers">
+				<Report>Quyền cần được thiết lập cho những thành viên bình thường</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="PermissOfModers">
+				<Report>Quyền cần được thiết lập cho những Moderators</Report>
+			</Element>
+			<Element Name="PermissionGrpFrmA" Area="ThanksAuthor">
+				<Report>Cảm ơn bài viết:</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="ModeratorA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="ModeratorA" Area="Title">
+				<Report>Set Quyền cho Moderator</Report>
+			</Element>
+			<Element Name="ModeratorA" Area="Manager">
+				<Report>Quản lý Moderator</Report>
+			</Element>
+			<Element Name="ModeratorA" Area="PnlModeratorTitle">
+				<Report>Chọn Moderator cho Forum với Nhóm quyền đã chọn</Report>
+			</Element>
+			<Element Name="ModeratorA" Area="SetModer">
+				<Report>Set Moderator</Report>
+			</Element>
+			<Element Name="ModeratorA" Area="IsSuper">
+				<Report>Super Moderator:</Report>
+			</Element>
+			<Element Name="ModeratorA" Area="IsSuper2">
+				<Report>Chọn Thành viên này làm Super Moderator (Quản lý Tất cả Forum)</Report>
+			</Element>
+			<Element Name="ModeratorA" Area="InsertModerFailed">
+				<Report>Thành viên này đã được chọn làm Moderator.</Report>
+			</Element>
+			<Element Name="ModeratorA" Area="pnlModerators">
+				<Report>Các Thành viên được chọn làm Moderator cho Forum trên</Report>
+			</Element>
+			<Element Name="ModeratorA" Area="UnSelectedGroup">
+				<Report>Bạn chưa chọn Nhóm Quyền cho thành viên.</Report>
+			</Element>
+			<Element Name="ModeratorA" Area="ViewAllModers">
+				<Report>Tất cả các Moderators</Report>
+			</Element>
+			<Element Name="ModeratorA" Area="ViewAllModers2">
+				<Report>Các thành viên được chọn làm Moderator của diễn đàn</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="AvatarA">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_AvatarA" Area="DdlCategories">
+				<Report>Chọn Nhóm Avatar</Report>
+			</Element>
+			<Element Name="SLMF_AvatarA" Area="UploadAvatars">
+				<Report>Upload Avatar</Report>
+			</Element>
+			<Element Name="SLMF_AvatarA" Area="AvatarManager">
+				<Report>Quản lý Avatar</Report>
+			</Element>
+			<Element Name="SLMF_AvatarA" Area="AvatarGroup">
+				<Report>Nhóm Avatar:</Report>
+			</Element>
+			<Element Name="SLMF_AvatarA" Area="CreateNewGrp">
+				<Report>Tạo Nhóm mới:</Report>
+			</Element>
+			<Element Name="SLMF_AvatarA" Area="btnCreateNewGrp">
+				<Report>Tạo mới</Report>
+			</Element>
+			<Element Name="SLMF_AvatarA" Area="UploadAvatars2">
+				<Report>Upload Avatar:</Report>
+			</Element>
+			<Element Name="SLMF_AvatarA" Area="DeleteCate">
+				<Report>Xoá nhóm</Report>
+			</Element>
+			<Element Name="SLMF_AvatarA" Area="ConfirmDeleteCate">
+				<Report>Bạn có đồng ý xoá nhóm Avatar này không ?</Report>
+			</Element>
+			<Element Name="SLMF_AvatarA" Area="ReloadGrv">
+				<Report>Reload</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="Analytics">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_Analytics" Area="Title">
+				<Report>Xem chi tiết</Report>
+			</Element>
+			<Element Name="SLMF_Analytics" Area="Title2">
+				<Report>Phân tích Diễn đàn</Report>
+			</Element>
+			<Element Name="SLMF_Analytics" Area="Title3">
+				<Report>Phân tích tình hình hoạt động Diễn đàn hàng ngày</Report>
+			</Element>
+			<Element Name="SLMF_Analytics" Area="DateAnal">
+				<Report>Ngày:</Report>
+			</Element>
+			<Element Name="SLMF_Analytics" Area="Members">
+				<Report>Tổng số Thành viên:</Report>
+			</Element>
+			<Element Name="SLMF_Analytics" Area="Messages">
+				<Report>Tổng số Bài viết:</Report>
+			</Element>
+			<Element Name="SLMF_Analytics" Area="Moderators">
+				<Report>Số Điều hành viên:</Report>
+			</Element>
+			<Element Name="SLMF_Analytics" Area="Topics">
+				<Report>Số Chủ đề:</Report>
+			</Element>
+			<Element Name="SLMF_Analytics" Area="NewestMemberId">
+				<Report>Thành viên mới nhất:</Report>
+			</Element>
+			<Element Name="SLMF_Analytics" Area="RegisterCount">
+				<Report>Thành viên đăng ký:</Report>
+			</Element>
+			<Element Name="SLMF_Analytics" Area="LoginCount">
+				<Report>Thành viên tham gia:</Report>
+			</Element>
+		</SlmfLang>
+		<SlmfLang name="Admins">
+			- <!--  List Member panel of PAF Forum - Copyright (c) John Nguyen - Powered by PAF - The ASP.Net Forum. [Pacific Access Software] 
+-->
+			<Element Name="SLMF_Admins" Area="Title">
+				<Report>Set quyền Admin</Report>
+			</Element>
+			<Element Name="SLMF_Admins" Area="Title2">
+				<Report>Chọn Thành viên để Set quyền Admin</Report>
+			</Element>
+			<Element Name="SLMF_Admins" Area="Title3">
+				<Report>Chọn Chức năng để Set quyền Admin</Report>
+			</Element>
+			<Element Name="SLMF_Admins" Area="Title4">
+				<Report>Các Chức năng đã Set quyền cho Admin trên</Report>
+			</Element>
+			<Element Name="SLMF_Admins" Area="btnSetLabel">
+				<Report>Thêm Chức năng:</Report>
+			</Element>
+			<Element Name="SLMF_Admins" Area="btnSet">
+				<Report>Thêm</Report>
+			</Element>
+			<Element Name="SLMF_Admins" Area="AllAdmins">
+				<Report>Tất cả các Admin</Report>
+			</Element>
+			<Element Name="SLMF_Admins" Area="AllAdminsTitle">
+				<Report>Các thành viên được chọn làm Admin</Report>
+			</Element>
+		</SlmfLang>
+	- </SunLightMountain>
+</root>

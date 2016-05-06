@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HLSNwAdmins.master.cs" Inherits="admincp_HLSNwAdmins" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Nhà 3W - Kết nối & Xanh & Hiện đại</title>
+    <link href="../App_Themes/Admin/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/Admin/Catalog.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../images/favico.ico" type="image/x-icon" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1"  runat="server"></asp:ScriptManager>
+    <div id="divMain">
+    <div style="width:100%">
+        <table style="width: 100%">
+            <tr>
+                <td align="center" style="width: 16%; padding:5px;" valign="top">
+                    <div style="width:100%; text-align:left; border: #3b5889 1px solid;">
+                        <div id="QLTT" style="width:100%">
+                            <a href="<%= ResolveUrl("~/admincp/news/default.aspx?idn=adrn&or=mngall")  %>"><div class="divMN">Quản lý tin tức</div></a>
+                            <div class="listMN">
+                                <ul id="TT" class="mnTT" runat="server"></ul>
+                            </div>
+                        </div>
+                        <div id="QLDL" style="width:100%">
+                            <div class="divMN">Quản lý download</div>
+                            <div class="listMN">
+                                <ul class="mnTT" runat="server">
+                                    <li> <a href="<%= ResolveUrl("~/Admincp/Uploads/default.aspx?idn=adrn&or=mngdlf")  %>">Upload file</a></li>
+                                    <%--<li> <a href="#">Quản lý file upload</a></li> --%>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="QlBL" style="width:100%">
+                            <div class="divMN">Quản lý bình luận</div>
+                            <div class="listMN">
+                                <ul  class="mnTT" runat="server">
+                                    <li><a href="<%= ResolveUrl("~/Admincp/Polls/default.aspx?idn=adrn&or=mngpls")  %>">DS câu hỏi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td align="center" style="width:80%; padding:5px;" valign="top">
+                    <div id="mainAd" style="width:100%;border: #3b5889 1px solid; overflow:hidden;">
+                        <div class="divMN"><a href="../default.aspx?idn=adrn&or=mngall" style="color:#ebf1fd">Trang chủ</a>&nbsp;&nbsp;<span id="uri" runat="server"></span>
+                            <div style="float:right;padding-right:8px"><a href="<%= ResolveUrl("signout.aspx")%>" style="color:#ebf1fd">Thoát</a></div>
+                        </div>
+                        <div class="listMN">
+                            <asp:ContentPlaceHolder ID="mainCPH" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+        <ProgressTemplate>
+            <div class="popup">
+                <img style="  margin-top:250px;" alt="" src="<%= ResolveUrl("~/Images/loadingPopup.gif")%>" />
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    </form>
+</body>
+</html>

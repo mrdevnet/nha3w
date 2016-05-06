@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HLSAdmins.master.cs" Inherits="admincp_HLSAdmins" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Nhà 3W - Kết nối & Xanh & Hiện đại - Admin Panel Nha 3W</title>
+    <link href="../styles/admins.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/ctrls.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../images/favico.ico" type="image/x-icon" />
+    <%--<link href="../styles/master.css" rel="stylesheet" type="text/css" />--%>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager ID="nawr" runat="server" />
+    <div class="aleft">
+        <div class="ph1"><img src="../images/bgl.png" alt=""/></div>
+        <div class="ph3">Thông tin chung</div>
+        <div class="ph4" runat="server" id="pr">
+            <a href="addcity.aspx?idn=adrc" class="afln">Tỉnh / Thành phố</a><br /><br />
+            <a href="adddistrict.aspx?idn=adrd" class="afln">Quận / Huyện</a><br /><br />
+            <a href="addproject.aspx?idn=adrp" class="afln">Dự án Địa ốc</a><br /><br />
+            <a href="addward.aspx?idn=adrw" class="afln">Phường / Xã</a><br /><br />
+            <a href="addstreet.aspx?idn=adrs" class="afln">Đường / Phố</a><br /><br />
+        </div>
+        
+        <div class="ph1"><img src="../images/bgl.png" alt=""/></div>
+        <div class="ph3">Nhóm / Thành viên</div>
+        <div class="ph4" runat="server" id="Div2">
+            <a href="addgroup.aspx?idn=adrg" class="afln">Quản lý Nhóm</a><br /><br />
+            <a href="addpermission.aspx?idn=adrpg" class="afln">Phân quyền Nhóm</a><br /><br />
+            <a href="addmoder.aspx?idn=adrmr" class="afln">Tài khoản quản lý</a><br /><br />
+            <a href="addamins.aspx?idn=adrmns" class="afln">Admins</a><br /><br />
+            <a href="adwlls.aspx?idn=adrwlls" class="afln">Tài khoản cá nhân</a><br /><br />
+        </div>
+        <div class="ph1"><img src="../images/bgl.png" alt=""/></div>
+        <div class="ph3">Tin tức</div>
+        <div class="ph4" runat="server" id="Div3">
+            <a href="news.aspx?idn=adrn&or=mngall" class="afln">Nhóm Tin tức</a><br /><br />
+            <a href="addrpts.aspx?idn=adrrt" class="afln">Thông báo chính</a><br /><br />
+        </div>
+    </div>
+    <div class="acenter"><img src="../images/bgl.png" alt=""/></div>
+    <div class="aright">
+        <%--<div class="ph1"><img src="../images/bgl.png" alt=""/></div>
+        <div class="ph3">Thông tin liên hệ</div>
+        <div class="ph4" runat="server" id="Div1">Họ tên:</div>--%>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

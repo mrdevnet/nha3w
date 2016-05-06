@@ -1,0 +1,442 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HLSProperty.master.cs" Inherits="HLSProperty" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Nhà 3W - Kết nối & Xanh & Hiện đại</title>
+    <link href="styles/master.css" rel="stylesheet" type="text/css" />
+    <link href="styles/ctrls.css" rel="stylesheet" type="text/css" />
+    <link href="styles/clrs.css" rel="stylesheet" type="text/css" />
+    <link href="styles/wlls.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/favico.ico" type="image/x-icon" />
+    <script type="text/javascript" src="java/ext-core.js"></script>
+    <%--<script type="text/javascript" language="javascript" src="http://vnexpress.net/Service/Gold_Content.js"></script>
+    <script type="text/javascript" language="javascript" src="http://vnexpress.net/Service/Forex_Content.js"></script>--%>
+    <script language="javascript" type="text/javascript">
+        function cbgmn1(a)
+        {
+            var c = document.getElementById(a);
+            c.className = "Headercl";
+        }
+        function chspg(a,b)
+        {
+            var c = document.getElementById(a);
+            c.className = "spgov";
+            var c2 = document.getElementById(b);
+            c2.className = "spg2ov";
+            
+        }
+        function chspg2(a,b)
+        {
+            var c = document.getElementById(a);
+            c.className = "spgo1";
+            var c2 = document.getElementById(b);
+            c2.className = "spg2o";
+        }
+        function bgapros(a)
+        {
+            var c = document.getElementById(a);
+            c.className = "wlsApproves";
+        }
+        function bgapros1(a)
+        {
+            var c = document.getElementById(a);
+            c.className = "wlsApproves4";
+        }
+        function bgaprocl(a)
+        {
+            var c3 = document.getElementById(a);
+            c3.className = "modbgpr";
+        }
+    </script>
+    <script type="text/javascript" src="java/elastic-textarea.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager ID="n3wr" runat="server" />
+    <div id="header">
+        <div class="tplg">
+            <div id="logo"><a href="Default.aspx" title="Nhà 3W - Kết nối & Xanh & Hiện đại"><img src="images/nha3w.png" id="img2" class="ilogo" /></a></div>
+            <div id="banner">
+                <div class="ins">
+                    <input type="text" id="txtS" value="Tìm kiếm" class="search" onfocus="if (this.value=='Tìm kiếm') this.value='';" onblur="if (this.value=='') this.value='Tìm kiếm';" />
+                </div>
+                <div class="ins2">
+                    <input id="btnS" type="image" src="images/sr.jpeg"  alt="Tìm kiếm" runat="server" />
+                </div>
+                <div class="mnuH">
+                    <a class="Headercl" href="Default.aspx">Trang chủ</a>
+                </div>
+                <div id="pri" class="mnuH" runat="server" visible="false">
+                    <a class="Header" id="bgpr" onclick="cbgmn1('bgpr');" href="editpro.aspx">Cá nhân</a>
+                </div>
+                <div class="mnuH">
+                    <a class="Header" id="bgfr" onclick="cbgmn1('bgfr');" href="forum/default.aspx">Diễn đàn</a>
+                </div>
+                <div class="mnuH">
+                    <a class="Header" id="bgns" onclick="cbgmn1('bgns');" href="news/default.aspx">Tin tức</a>
+                </div>
+                <div id="reg" class="mnuH" visible="true" runat="server">
+                    <a class="Header" id="bgrg" onclick="cbgmn1('bgrg');" href="login.aspx">Đăng ký</a>
+                </div>
+                <div id="lg" class="mnuH" visible="true" runat="server">
+                    <a class="Header" id="bglg" onclick="cbgmn1('bglg');" href="login.aspx">Đăng nhập</a>
+                </div>
+                <div id="sg" class="mnuH" visible="false" runat="server">
+                    <a class="Header" id="bgsn" onclick="cbgmn1('bgsn');" href="signout.aspx">Thoát</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="linkr"><img src="images/bgl.png" alt=""/></div>
+    <div id="page_container">
+        <div id="left_column">
+            <div id="lft" runat="server" visible="false">
+                <div class="atpic">
+                    <a href="post.aspx" title="Đăng tin mới"><img class="wlsimg" id="Img1" src="images/wrn.png"/></a>
+                    <a href="manage.aspx?sa=1" title="Kích hoạt & Cài đặt tính năng tin"><img class="wlsimg" id="Img3" src="images/evnts.png"/></a>
+                    <a href='<%= "profile.aspx?v=wall&m=" + rtnId() %>' title="Tường"><img class="wlsimg" id="Img6" src="images/wlls1.png"/></a>
+                    <a href='<%= "profile.aspx?v=grps&m=" + rtnId() %>' title="Nhóm"><img class="wlsimg" id="Img7" src="images/grpsn.png"/></a>
+                    <a href="pm.aspx?pm=i" title="Tin nhắn & Email"><img class="wlsimg" id="Img5" src="images/pmn1.png"/></a>
+                    <a href="editpro.aspx" title="Thay đổi logo & thông tin cá nhân"><img class="wlsimg" id="Img4" src="images/profs.png"/></a>
+                    <img class="wlsimg" id="Img8" src="images/coin14.png" alt="Xu trong tài khoản"/>
+                </div>
+                <div class="atpic3"><%=HungLocSon.BHLS.BTransIO.MyWallet(lk3())%></div>
+                <div class="mlogo">
+                    <a href='<%= "profile.aspx?v=wall&m=" + rtnId() %>'><img id="avas" runat="server" src="images/procity.gif" class="m2l2p" alt=""/></a>
+                </div>
+                <div class="ei" runat="server" id="eipr">
+                    <a href="editpro.aspx" class="hc">Thay đổi Thông tin cá nhân</a>
+                </div>
+                <div class="ei" runat="server" id="eipr2">
+                    <a href='<%= "pm.aspx?pm=w&m=" + rtnId() %>' class="hc" title='<%= "Gửi tin nhắn cho " + foreverinlove() %>'>Gửi tin nhắn cho <%= HungLocSon.Tools.Support.ReleaseInput2(foreverinlove(),10) %></a>
+                </div>
+                <div id="blki" class="pels2" runat="server">
+                    <asp:LinkButton OnClientClick="javascript:return confirm('Bạn muốn khoá kết nối với thành viên này?');" ID="blki2" runat="server" CssClass="hc" OnClick="blki2_Click">Khoá kết nối <%= HungLocSon.Tools.Support.ReleaseInput2(foreverinlove(), 10)%></asp:LinkButton>
+                    <asp:LinkButton ID="blki3" OnClientClick="javascript:return confirm('Bỏ khoá kết nối với thành viên này?');" runat="server" CssClass="hc" Visible="false" OnClick="blki3_Click">Đã khoá <%= HungLocSon.Tools.Support.ReleaseInput2(foreverinlove(), 10)%></asp:LinkButton>
+                    <%--<a href="pm.aspx?pm=i" class="hc"></a>--%>
+                </div>
+                <div id="spmi" class="pels2" runat="server">
+                    <asp:LinkButton ID="spmi2" OnClientClick="javascript:return confirm('Bạn muốn khoá kết nối và báo spam thành viên này?');" runat="server" CssClass="hc" OnClick="spmi2_Click">Báo <%= HungLocSon.Tools.Support.ReleaseInput2(foreverinlove(), 10)%> spam</asp:LinkButton>
+                    <%--<a href="pm.aspx?pm=i" class="hc">Báo <%= rtnId2()%> spam</a>--%>
+                </div>
+                <div id="pels" class="pels2" runat="server">
+                    <a href="pm.aspx?pm=i" class="hc">Tin nhắn & Email <%= CntPms() %></a>
+                </div>
+                <div id="profs" class="pels2" runat="server">
+                    <a href='<%= "profile.aspx?v=wall&m=" + rtnId() %>' class="hc">Trang cá nhân</a>
+                </div>
+                <asp:UpdatePanel id="uppr" runat="server">
+                <ContentTemplate>
+                <span id="spprmr" runat="server">
+                <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+                <div class="wlsApproves2" onclick="bgaprocl('ctl00_icolor2');" onmouseout="bgapros('ctl00_grps');" onmouseover="bgapros1('ctl00_grps');"><div class="wlsApproves" id="grps" runat="server"></div></div>
+                <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+                <ajaxToolkit:ModalPopupExtender X="423" Y="220" PopupDragHandleControlID="Panel3" BackgroundCssClass="modalBackground" CancelControlID="CancelButton" TargetControlID="grps" PopupControlID="icolor2" ID="mpx" runat="server"></ajaxToolkit:ModalPopupExtender>
+                <div class="wls8" id="icolor2" runat="server">
+                    <asp:Panel ID="Panel3" runat="server" CssClass="modalbg6">
+                        <div>Thành viên đang chờ duyệt</div>
+                        <div class="wlsiclb" title="Đóng"><img id="CancelButton" src="images/cdp.png" alt=""/></div>
+                    </asp:Panel>
+                    <asp:Repeater ID="flwings" runat="server" OnItemDataBound="flwings_ItemDataBound" OnItemCommand="flwings_ItemCommand">
+                        <ItemTemplate>
+                            <div class="wls1" id="icolor" runat="server">
+                                <div class="wlf0">
+                                    <a href='<%#"profile.aspx?v=wall&m=" + Eval("ToMember")%>' class="wls3hr"><img class="wlsimg" src='<%# "avas/thumbs/" + Eval("Logo")%>'/></a>
+                                </div>
+                                <div class="wlf1arm" runat="server" id="cntflw"></div>
+                                <div class="wlf2arm">
+                                    <asp:Button CommandName="cmdflws" CommandArgument='<%# Eval("ToMember") %>' CssClass="btflwings" ID="adfrs" runat="server" Text="Duyệt" ToolTip="Thành viên này theo đuôi"/> 
+                                    <asp:Button CommandName="cmdflws2" CommandArgument='<%# Eval("ToMember") %>' CssClass="btflwings" ID="adfrs2" runat="server" Text="Bỏ qua" ToolTip="Thành viên này theo đuôi"/>
+                                </div>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                    <%--<asp:Button OnClientClick="javascript:find4();" CssClass="artcbt" ID="OkButton" runat="server" Text="Chọn nhóm" CommandName="cmdgrp" CommandArgument='<%# Eval("ToMember") %>'/>--%>
+                    <%--<asp:Button CssClass="artcbt" ID="CancelButton"  runat="server" Text="Bỏ qua" />--%>
+                </div>
+                </span>
+                </ContentTemplate>
+                    <Triggers>
+                    </Triggers>
+                </asp:UpdatePanel>
+                <asp:UpdatePanel id="sig" runat="server">
+                <ContentTemplate>
+                <div runat="server" id="flwing2" class="ph1"><img src="images/bgl.png" alt=""/></div>
+                <div class="phaf" runat="server" id="flwing">
+                    <span id="flwdtls" runat="server"></span>
+                    <asp:Button CssClass="btflwings" OnClientClick="javascript:return confirm('Bạn muốn theo đuôi thành viên này?');" ID="adfrs" runat="server" Text="Theo đuôi" ToolTip="Theo đuôi thành viên này" OnClick="adfrs_Click"/>
+                    <%--<asp:ImageButton ID="adfrs" runat="server" ToolTip="Kết bạn với thành viên này" ImageUrl="images/afrw.png" OnClick="adfrs_Click"/>--%>
+                    <asp:ImageButton ID="ifrs" OnClientClick="javascript:return confirm('Bạn không muốn tiếp tục theo đuôi thành viên này?');" ToolTip="Huỷ kết nối với thành viên này" runat="server" ImageUrl="images/cdp.png" Visible="false" OnClick="ifrs_Click"/>
+                    <asp:ImageButton ID="afrs" ToolTip="Huỷ kết nối với thành viên này" runat="server" ImageUrl="images/cdp.png"  Visible="false" OnClick="afrs_Click"/>
+                    <%--<asp:LinkButton ID="adfrs" runat="server" CssClass="hcnb"><img src="images/addfr.jpeg" /> Kết Bạn</asp:LinkButton>--%>
+                    <%--<img src="images/addfr.jpeg" /><asp:Button CssClass="btflw" ID="adf" runat="server" Text="+1 Kết Bạn"/>--%>
+                </div>
+                <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+                <div class="phaf">
+                    <a onmouseout="chspg2('spg1','ctl00_cflwings');" onmouseover="chspg('spg1','ctl00_cflwings');" href='<%="profile.aspx?v=frs&m="+ rtnId() %>' class="hcnbl">
+                        <div style="width:35%;float:left">
+                            <span class="spg2o" id="cflwings" runat="server">0</span><br />
+                            <span id="spg1">đang theo</span>
+                        </div>
+                    </a>
+                    <a onmouseout="chspg2('spg2','ctl00_cflwrs');" onmouseover="chspg('spg2','ctl00_cflwrs');" href='<%="profile.aspx?v=flws&m="+ rtnId() %>' class="hcnbl">
+                        <div style="width:35%;float:left">
+                            <span class="spg2o" id="cflwrs" runat="server">0</span><br />
+                            <span id="spg2">người theo</span>
+                        </div>
+                    </a>
+                    <a onmouseout="chspg2('spg3','ctl00_clsted');" onmouseover="chspg('spg3','ctl00_clsted');" href='<%="profile.aspx?v=grps&m="+ rtnId() %>' class="hcnbl">
+                        <div style="width:30%;float:left">
+                            <span class="spg2o" id="clsted" runat="server">0</span><br />
+                            <span id="spg3">nhóm</span>
+                        </div>
+                    </a>
+                </div>
+                </ContentTemplate>
+                    <Triggers>
+                        <asp:AsyncPostBackTrigger ControlID="adfrs" EventName="Click" />
+                        <asp:AsyncPostBackTrigger ControlID="afrs" EventName="Click" />
+                        <asp:AsyncPostBackTrigger ControlID="ifrs" EventName="Click" />
+                    </Triggers>
+                </asp:UpdatePanel>
+                <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+                <asp:Panel ID="cmdfrls" runat="server">
+                    <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+                    <div class="ph3">Đang theo</div>
+                    <div id="Div3" class="ph4" runat="server">
+                        <asp:Repeater ID="rfrs" runat="server">
+                            <ItemTemplate>
+                                <a class="rads" title='<%# Eval("UR")%>' href='<%# "profile.aspx?v=wall&m=" + Eval("MI") %>'>
+                                    <img class="avars" src='<%# Eval("Logo") == null || Eval("Logo").ToString() == "" ? "avas/thumbs/prof3w.png" : "avas/thumbs/" + Eval("Logo") %>' />
+                                    <%--<img src='<%# HungLocSon.UHLS.EncryptM.CreateThumbnail((System.Drawing.Bitmap)(Server.MapPath("../avas/" + Eval("Logo"))),48,48) %>'/>--%>
+                                    <%--<%# Eval("UR")%>--%>
+                                </a>
+                            </ItemTemplate>
+                            <%--<SeparatorTemplate>,</SeparatorTemplate>--%>
+                        </asp:Repeater>
+                    </div>
+                </asp:Panel>
+                <asp:Panel id="cmdn3w" runat="server" >
+                    <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+                    <div class="ph">
+                        <a id="sta0" runat="server" href="post.aspx" class="hcnb">Đăng tin mới</a>
+                    </div>
+                    <div class="ph2">
+                        <img src="images/vis.png" width="16px" class="ico"/> <a id="sta1" runat="server" href="manage.aspx?sa=1" class="hcnbl">Đang hiển thị (0)</a>
+                    </div>
+                    <div class="ph2">
+                        <img src="images/appr.png" width="16px" class="ico"/> <a id="sta2" runat="server" href="manage.aspx?sa=2" class="hcnbl">Đang chờ duyệt (0)</a>
+                    </div>
+                    <div class="ph2">
+                        <img src="images/crti.png" width="16px" class="ico"/> <a id="sta4" runat="server" href="manage.aspx?sa=4" class="hcnbl">Đang soạn (0)</a>
+                    </div>
+                    <div class="ph2">
+                        <img src="images/nadd.png" width="16px" class="ico"/> <a id="sta3" runat="server" href="manage.aspx?sa=3" class="hcnbl">Chưa hợp lệ (0)</a>
+                    </div>
+                    <div class="ph2">
+                        <img src="images/nds.png" width="16px" class="ico"/> <a id="stas" runat="server" href="manage.aspx?sa=5" class="hcnbl">Tin đã lưu (0)</a>
+                    </div>
+                </asp:Panel>
+                <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+                <div class="ph3">Thông tin liên hệ</div>
+                <div class="ph4" runat="server" id="pr">Họ tên:</div>
+            </div>
+            <asp:Panel ID="cmdont" runat="server">
+                <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+                <div id="ioli2" runat="server">Online<%= Avw() %></div> <%// class="php"  ph3--%>
+                <div class="ph4" runat="server" id="ioli">
+                    <asp:Repeater ID="netv" runat="server">
+                        <ItemTemplate>
+                            <a id="urnet" class="rads" title='<%# Eval("UR") + " ::: Online: " + HungLocSon.UHLS.EncryptM.NetOn(int.Parse(Eval("NT").ToString())) + " - Cách: " + Eval("LS") + " phút" %>' href='<%# "profile.aspx?v=wall&m=" + Eval("MI") %>'>
+                                <img class="avars" src='<%# Eval("Logo") == null || Eval("Logo").ToString() == "" ? "avas/thumbs/prof3w.png" : "avas/thumbs/" + Eval("Logo") %>' />
+                            </a>
+                        </ItemTemplate>
+                        <%--<SeparatorTemplate>,</SeparatorTemplate>--%>
+                    </asp:Repeater>
+                </div>
+            </asp:Panel>
+            <asp:Panel ID="cmdtopfls" runat="server">
+                <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+                <div id="i9ns" runat="server">Thành viên mới nhất</div> <% // class="ph3" php--%>
+                <div class="ph4">
+                    <asp:Repeater ID="topflws" runat="server">
+                        <ItemTemplate>
+                            <a class="rads" title='<%# Eval("UR")%>' href='<%# "default.aspx?m=" + Eval("MI") %>'>
+                                <img class="avars" src='<%# Eval("Logo") == null || Eval("Logo").ToString() == "" ? "avas/thumbs/prof3w.png" : "avas/thumbs/" + Eval("Logo") %>' />
+                            </a>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+            </asp:Panel>
+            <asp:Panel ID="cmdspt" runat="server">
+                <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+                <div class="ph3" id="scl" runat="server">Tin vừa xem</div>
+                <div class="ph4" runat="server" id="ilogs">
+                    <asp:Repeater ID="rlgs" runat="server">
+                        <ItemTemplate>
+                            <img src="images/d2.jpg" alt=""/><a class="afln" href='<%# "details.aspx?p=" +  Eval("PostId") %>'><%# Eval("Title") %></a>
+                        </ItemTemplate>
+                        <SeparatorTemplate><div class="logs"><img src="images/bgl.png" alt=""/></div></SeparatorTemplate>
+                    </asp:Repeater>
+                </div>
+            </asp:Panel>
+            <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+            <div class="ph3">Thảo luận mới nhất</div>
+            <div class="ph4">
+                <asp:Repeater ID="r4r" runat="server">
+                    <ItemTemplate>
+                        <img src="images/d2.jpg" alt=""/><a class="afln" title='<%# "[" + "Bài viết mới: " + Eval("LastAuthor") + " | " + "Trả lời: " + Eval("TotalReplies") + " | " + "Lần xem: " + Eval("TotalViews") + " | " + "Diễn đàn: " + Eval("Name") + "]" %>' href='<%# "forum/showtopic.aspx?goto=newmessage&topicid=" + Eval("TopicId") %>'><%# Eval("Title") %></a>
+                    </ItemTemplate>
+                    <SeparatorTemplate><div class="logs"><img src="images/bgl.png" alt=""/></div></SeparatorTemplate>
+                </asp:Repeater>
+            </div>
+            <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+            <div class="ph3">Tin tức mới nhất</div>
+            <div class="ph4">
+                <asp:Repeater ID="r4n" runat="server">
+                    <ItemTemplate>
+                        <img src="images/d2.jpg" alt=""/><a class="afln" href='<%# "news/articles.aspx?i=" + Eval("NewsId") %>'><%# Eval("Title") %></a>
+                    </ItemTemplate>
+                    <SeparatorTemplate><div class="logs"><img src="images/bgl.png" alt=""/></div></SeparatorTemplate>
+                </asp:Repeater>
+            </div>
+            <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+            <div class="ph3">Download mới nhất</div>
+            <div class="ph4">
+                <asp:Repeater ID="r4d" runat="server">
+                    <ItemTemplate>
+                        <img src="images/d2.jpg" alt=""/><a class="afln" href='<%# "javascript:showDownload(\"news/downloads.aspx?i=" + Eval("DownloadId") + "\")" %>'><%# Eval("Title") + " (" + Eval("Download") + ")"%></a>
+                    </ItemTemplate>
+                    <SeparatorTemplate><div class="logs"><img src="images/bgl.png" alt=""/></div></SeparatorTemplate>
+                </asp:Repeater>
+                <script type="text/javascript">
+                    var msgWindow = null;
+                    function showDownload(url)
+                    {
+                        width = 400;
+                        height = 300;
+                        top_val = (screen.height - height) / 2 - 30;
+                        if (top_val < 0) { top_val = 0; } left_val = (screen.width - width) / 2;
+                        if(msgWindow != null)
+                        {
+                            msgWindow.close();
+                        }
+                        msgWindow = window.open(url, "", "toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=0,width=" + width + ",height=" + height + ", top=" + top_val + ",left=" + left_val);
+                    }
+                </script>
+            </div>
+            <%--<div class="ph1" id="iow32" runat="server" visible="false"><img src="images/bgl.png" alt=""/></div>
+            <div class="php" id="iow3" runat="server" visible="false"></div>--%>
+            <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+            <div class="ph3" >Giá vàng & Tỷ giá</div>
+            <div class="ph4">
+                <div class="sjd">SJC: <strong>35,780<%--<script type="text/javascript" language="javascript">document.write(vGoldSjcBuy);</script>--%> tr.đ/lượng</strong></div>
+                <div class="sjd">USD: <strong>19.500<%--<script type="text/javascript" language="javascript">document.write(vCosts[0]);</script>--%> vnđ</strong></div>
+            </div>
+        </div>
+        <div id="center_column">
+            <div class="tltrpt">
+                <asp:Repeater ID="rpts" runat="server">
+                    <ItemTemplate>
+                        <div class="tltrpt1"><%# HungLocSon.Tools.Support.calr(DateTime.Parse(Eval("Updated").ToString())) %></div>
+                        <div class="tltrpt2"><a href='<%# Eval("Url") %>' title='<%# Eval("Title")%>' class="tltrpt3"><%# HungLocSon.Tools.Support.ReleaseInput(Eval("Title").ToString(),50) %></a></div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
+            <div class="na" id="full" runat="server">Nhà 3W - Kết nối & Xanh & Hiện đại</div>
+            <asp:UpdatePanel id="upcnt" runat="server">
+            <ContentTemplate>
+                <div class="cifr" id="cif"><img src="images/bgl.png" alt=""/>
+                    <span id="spdtls" runat="server"></span>&nbsp;&nbsp;
+                    <asp:Button OnClientClick="javascript:return confirm('Bạn muốn theo đuôi thành viên này?');" CssClass="btflwings" ID="itfra" runat="server" Text="Theo đuôi" Visible="false" ToolTip="Theo đuôi thành viên này" OnClick="adfrs_Click"/>
+                    <%--<asp:ImageButton ID="itfra" runat="server" ToolTip="Kết bạn với thành viên này" Visible="false" ImageUrl="images/adfr2.png" OnClick="adfrs_Click"/>--%>
+                    <asp:ImageButton ID="itfrap" ToolTip="Đang chờ thành viên này xác nhận" runat="server" ImageUrl="images/cdp.png"  Visible="false" OnClick="afrs_Click"/>
+                </div>
+            </ContentTemplate>
+                <Triggers>
+                    <asp:AsyncPostBackTrigger ControlID="itfra" EventName="Click" />
+                    <asp:AsyncPostBackTrigger ControlID="itfrap" EventName="Click" />
+                </Triggers>
+            </asp:UpdatePanel>
+            <div class="mnuwfr" id="walls" runat="server">
+                <div class="mnuHFr">
+                    <a id="mw" runat="server" class="HeaderFr2" onclick="wallclk('ctl00_mw','ctl00_mf','ctl00_mr','ctl00_mg','ctl00_mv','ctl00_ms','ctl00_mp')">Tường</a>
+                </div>
+                <div id="Div2" class="mnuHFr" runat="server" visible="true">
+                    <a id="mf" runat="server" class="HeaderFr" onclick="wallclk('ctl00_mf','ctl00_mw','ctl00_mr','ctl00_mg','ctl00_mv','ctl00_ms','ctl00_mp')">Đang theo</a>
+                </div>
+                <div id="Div1" class="mnuHFr" runat="server" visible="true">
+                    <a id="mr" runat="server" class="HeaderFr" onclick="wallclk('ctl00_mr','ctl00_mf','ctl00_mw','ctl00_mg','ctl00_mv','ctl00_ms','ctl00_mp')">Người theo</a>
+                </div>
+                <div class="mnuHFr">
+                    <a id="mg" runat="server" class="HeaderFr" onclick="wallclk('ctl00_mg','ctl00_mr','ctl00_mf','ctl00_mw','ctl00_mv','ctl00_ms','ctl00_mp')">Nhóm</a>
+                </div>
+                <div class="mnuHFr">
+                    <a id="mv" runat="server" class="HeaderFr" onclick="wallclk('ctl00_mv','ctl00_mg','ctl00_mr','ctl00_mf','ctl00_mw','ctl00_ms','ctl00_mp')">Yêu thích</a>
+                </div>
+                <div class="mnuHFr">
+                    <a id="mp" runat="server" class="HeaderFr" onclick="wallclk('ctl00_mp','ctl00_mg','ctl00_mr','ctl00_mf','ctl00_mw','ctl00_ms','ctl00_mv')">Tin đăng</a>
+                </div>
+                <div class="mnuHFr">
+                    <a visible="false" id="ms" runat="server" class="HeaderFr" onclick="wallclk('ctl00_ms','ctl00_mv','ctl00_mg','ctl00_mr','ctl00_mf','ctl00_mw','ctl00_mp')">Tìm kiếm</a>
+                </div>
+                <script type="text/javascript" language="javascript">
+                    function wallclk(a,b,c,d,e,f)
+                    {
+                        var s1v = document.getElementById(a);
+                        var s2v = document.getElementById(b);
+                        var s3v = document.getElementById(c);
+                        var s4v = document.getElementById(d);
+                        var s5v = document.getElementById(e);
+                        var s6v = document.getElementById(f);
+                        s1v.className = "HeaderFr2";
+                        s2v.className = "HeaderFr";
+                        s3v.className = "HeaderFr";
+                        s4v.className = "HeaderFr";
+                        s5v.className = "HeaderFr";
+                        s6v.className = "HeaderFr";
+                    }
+                </script>
+            </div>
+            <asp:contentplaceholder id="cphc" runat="server"></asp:contentplaceholder>
+        </div>
+        <div id="right_column">
+            <div id="r2">
+                <div class="lbns"></div>
+                <asp:contentplaceholder id="cphr" runat="server"></asp:contentplaceholder>
+            </div>
+         </div>
+         <div class="ph1"><img src="images/bgl.png" alt=""/></div>
+         <div id="footer">
+            <div class="fpln"></div>
+            <div class="cprt">Nhà 3W © 2010 :: Tốt nhất với Firefox 3.6 trở lên</div>
+            <div class="gfln">
+                <a href="#" class="afln">Liên hệ</a>
+                <a href="#" class="afln">Quảng cáo</a>
+                <a href="#" class="afln">Điều khoản</a>
+                <a href="#" class="afln">Bảo mật</a>
+                <a href="#" class="afln">Trợ giúp</a>
+                <a href="#" class="afln">Về chúng tôi</a>
+                <a href="forum/default.aspx" class="afln">Diễn đàn</a>
+            </div>
+         </div>
+         <div class="snt"><img src="images/sp.gif" alt=""/></div>
+    </div>
+    </form>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20023838-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HLSProfile.master.cs" Inherits="HLSProfile" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Nhà 3W - Kết nối & Xanh & Hiện đại</title>
+    <link rel="shortcut icon" href="images/favico.ico" type="image/x-icon" />
+    <link href="App_Themes/Profile/master_profile.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/Profile/profile.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/Profile/master_pm.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/Profile/pm.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/Profile/login.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        function chbg(a,b,c)
+        {
+            var c1 = document.getElementById(a);
+            var c2 = document.getElementById(b);
+            var c3 = document.getElementById(c);
+            c1.className = "mnuicl";
+            c2.className = "mnuis";
+            c3.className = "mnuis";
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <%--<asp:ScriptManager ID="hlscmg" runat="server"></asp:ScriptManager>--%>
+    <ajaxToolkit:ToolkitScriptManager ID="hlscmg" runat="server" />
+    <div id="banner"></div>
+    <div id="main">
+        <div class="loggedout_menubar_container">
+        <div class="loggedout_menubar_content">
+                <div style="float:left;margin-top:-1px" ><a href="Default.aspx" title="Nhà 3W - Kết nối & Xanh & Hiện đại"><img title="Nhà 3W - Kết nối & Xanh & Hiện đại" src="images/nha3w.png"/></a></div>
+         <div id="menu_top">
+            <ul class="menu_item">
+                <li><a href="Default.aspx">Trang chủ</a></li>
+                <li><a runat="server" id="bgpm" class="mnuis" onclick="chbg('ctl00_bgpm','ctl00_bgem','ctl00_bgpr');" href="pm.aspx?pm=i">Tin nhắn</a></li>
+                <li><a runat="server" id="bgem" class="mnuis" onclick="chbg('ctl00_bgem','ctl00_bgpm','ctl00_bgpr');" href="pm.aspx?em=o">Email</a></li>
+                <li><a runat="server" id="bgpr" onclick="chbg('ctl00_bgpr','ctl00_bgpm','ctl00_bgem');" class="mnuicl" href="editpro.aspx">Thông tin cá nhân</a></li>
+               <li><a href="signout.aspx">Thoát</a><%--<asp:LinkButton ID="exit" runat="server" OnClick="exit_Click">Thoát</asp:LinkButton>--%></li>
+            </ul>
+         </div>
+        </div>       
+        </div>
+        <div id="dropmenu_container"></div>
+        <div id="content_container">
+            <div class="content_content">
+                <asp:ContentPlaceHolder ID="Content" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <%--<div id="footer_container">
+            <div id="footer_contentCurve"></div>
+            <div id="footer_content">
+                <div id="footer_content_left">Nha3w@2010</div>
+                <div id="footer_content_right">
+                    <a>Về chúng tôi</a>
+                </div>
+            </div>
+        </div>--%>
+        <div id="footer" style="width:994px;margin:0px auto;">
+                <div class="fpln"></div>
+                    <div class="cprt" style="text-align: left">Nhà 3W © 2010 :: Tốt nhất với Firefox 3.6 trở lên</div>
+                    <div class="gfln" style="padding-top:5px">
+                    <a href="#" class="afln">Liên hệ</a>
+                    <a href="#" class="afln">Quảng cáo</a>
+                    <a href="#" class="afln">Điều khoản</a>
+                    <a href="#" class="afln">Bảo mật</a>
+                    <a href="#" class="afln">Trợ giúp</a>
+                    <a href="#" class="afln">Về chúng tôi</a>
+                    <a href="forum/default.aspx" class="afln">Diễn đàn</a>
+                </div>
+            </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20023838-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

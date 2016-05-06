@@ -1,0 +1,11 @@
+bin\Debug\BHLS.dll
+bin\Debug\BHLS.pdb
+bin\Debug\DHLS.dll
+bin\Debug\EHLS.dll
+bin\Debug\UHLS.dll
+bin\Debug\DHLS.pdb
+bin\Debug\EHLS.pdb
+bin\Debug\UHLS.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BHLS.dll
+obj\Debug\BHLS.pdb

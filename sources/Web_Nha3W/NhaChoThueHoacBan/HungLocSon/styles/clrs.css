@@ -1,0 +1,66 @@
+﻿.tltrpt
+{
+	width:360px;
+	/*height : 31px;*/
+	/*background-color : Green;*/
+	margin-top: -32px;
+	float:right;
+	margin-right : -181px;
+	padding : 9px 0px 3px 0px
+}
+
+.dvtltns
+{
+	width:994px;
+	margin :0 auto;
+	background-color : Aqua
+}
+
+.tltrptns
+{
+	/*width:321px;*/
+	/*height : 31px;*/
+	/*background-color : Green;*/
+	width:360px;
+	margin-top: -82px;
+	float:right;
+	margin-right:1px;
+	padding : 9px 0px 3px 0px;
+}
+
+.tltrpt1
+{
+	width:24%;
+	font-family: Tahoma,Verdana,Times New Roman;
+	font-size : 11px;
+	float : left;
+	text-align : left;
+	color : #808080;
+	padding-bottom : 1px;
+}
+
+.tltrpt2
+{
+	width:75%;
+	font-family: Tahoma,Verdana,Times New Roman;
+	font-size : 11px;
+	float : left;
+	text-align : left;
+	padding-bottom : 1px;
+}
+
+A.tltrpt3:link,A.tltrpt3:active,A.tltrpt3:visited
+{
+    font-family : Tahoma,Verdana, Arial;
+    font-size : 11px;
+    color : #4F8C34;
+    text-decoration : none;
+}
+
+A.tltrpt3:hover
+{
+    font-family :  Tahoma,Verdana, Arial;
+    font-size : 11px;
+    color : #4F8C34;
+    text-decoration : underline;
+}

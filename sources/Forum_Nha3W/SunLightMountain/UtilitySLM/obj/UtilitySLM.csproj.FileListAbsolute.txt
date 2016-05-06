@@ -1,0 +1,10 @@
+D:\SunLightForum\SunLightMountain\UtilitySLM\bin\Debug\UtilitySLM.dll
+D:\SunLightForum\SunLightMountain\UtilitySLM\bin\Debug\UtilitySLM.pdb
+D:\SunLightForum\SunLightMountain\UtilitySLM\obj\Debug\ResolveAssemblyReference.cache
+D:\SunLightForum\SunLightMountain\UtilitySLM\obj\Debug\UtilitySLM.dll
+D:\SunLightForum\SunLightMountain\UtilitySLM\obj\Debug\UtilitySLM.pdb
+D:\HungLocSon\ForumSLMF\SunLightMountain\UtilitySLM\bin\Debug\UtilitySLM.dll
+D:\HungLocSon\ForumSLMF\SunLightMountain\UtilitySLM\bin\Debug\UtilitySLM.pdb
+D:\HungLocSon\ForumSLMF\SunLightMountain\UtilitySLM\obj\Debug\ResolveAssemblyReference.cache
+D:\HungLocSon\ForumSLMF\SunLightMountain\UtilitySLM\obj\Debug\UtilitySLM.dll
+D:\HungLocSon\ForumSLMF\SunLightMountain\UtilitySLM\obj\Debug\UtilitySLM.pdb

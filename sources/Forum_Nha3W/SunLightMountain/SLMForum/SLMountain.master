@@ -1,0 +1,226 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SLMountain.master.cs" Inherits="SLMountain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Nhà 3W - Kết nối & Xanh & Hiện đại</title>
+    <meta name="keywords" content="Bat dong san, dia oc, nha dat, nha o, nha cho thue, nha tro, phong tro,nha gia re, nha ban, chuyen nhuong nha dat, xay dung, vat tu, kien truc, cong trinh, du an, chung cu, cao oc, van phong;" />
+    <meta content="General" name="RATING" />
+    <meta name="robots" content="index,all,follow" />
+    <link href="SlmStyles/SunLightMountain.css" rel="stylesheet" type="text/css" />
+    <link href="SlmStyles/SlmControls.css" rel="stylesheet" type="text/css" />
+    <link href="SlmStyles/SlmForum.css" rel="stylesheet" type="text/css" />
+    <link href="SlmStyles/SlmTopic.css" rel="stylesheet" type="text/css" />
+    <link href="SlmStyles/SlmMsg.css" rel="stylesheet" type="text/css" />
+    <link href="SlmStyles/SlmMost.css" rel="stylesheet" type="text/css" />
+    <link href="SlmStyles/PagerName.css" rel="stylesheet" type="text/css" />
+    <link href="SlmStyles/master.css" rel="stylesheet" type="text/css" />
+    <link href="SlmStyles/menu.css" rel="stylesheet" type="text/css" />
+    <%--<link href="SlmStyles/StyleSheet.css" rel="stylesheet" type="text/css" />--%>
+    <link rel="shortcut icon" href="slmimages/favico.ico" type="image/x-icon" />
+    <%--<link rel="shortcut icon" href="SlmImages/favicon.ico" type="image/x-icon" />--%>
+    <script src='SlmScripts/sunlightenc.md5.js' type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        function chbg(a)
+        {
+            var c = document.getElementById(a);
+            c.className = "Headercl";
+        }
+    </script>
+</head>
+<body>
+    <form id="frmSLF" runat="server">
+        <div id="header">
+            <div class="tplg">
+                <div id="logo"><a href="../Default.aspx" title="Nhà 3W - Kết nối & Xanh & Hiện đại"><img src="slmimages/nha3w.png" id="img2" class="ilogo" /></a></div>
+                <div id="banner">
+                    <div class="ins">
+                        <input type="text" id="txtS" value="Tìm kiếm" class="search" onfocus="if (this.value=='Tìm kiếm') this.value='';" onblur="if (this.value=='') this.value='Tìm kiếm';" />
+                    </div>
+                    <div class="ins2">
+                        <input id="btnS" type="image" src="slmimages/sr.jpeg"  alt="Tìm kiếm" runat="server" />
+                    </div>
+                    <div class="mnuH">
+                        <a class="Header" id="bghp" onclick="chbg('bghp');" href="../Default.aspx">Trang chủ</a>
+                    </div>
+                    <div id="pri" class="mnuH" runat="server" visible="false">
+                        <a class="Header" id="bgpr" onclick="chbg('bgpr');" href="../editpro.aspx">Cá nhân</a>
+                    </div>
+                    <div class="mnuH">
+                        <a class="Headercl" href="default.aspx">Diễn đàn</a>
+                    </div>
+                    <div class="mnuH">
+                        <a class="Header" id="bgns" onclick="chbg('bgns');" href="../news/default.aspx">Tin tức</a>
+                    </div>
+                    <div id="reg" class="mnuH" visible="true" runat="server">
+                        <a class="Header" id="bgrg" onclick="chbg('bgrg');" href="../login.aspx">Đăng ký</a>
+                    </div>
+                    <div id="lg" class="mnuH" visible="true" runat="server">
+                        <a class="Header" id="bglg" onclick="chbg('bglg');" href="../login.aspx">Đăng nhập</a>
+                    </div>
+                    <div id="sg" class="mnuH" visible="false" runat="server">
+                        <a class="Header" id="bgsn" onclick="chbg('bgsn');" href="../signout.aspx">Thoát</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="linkr">
+            <div class="dvtltns">
+                <div class="tltrpt">
+                    <asp:Repeater ID="rpts" runat="server">
+                        <ItemTemplate>
+                            <div class="tltrpt1"><%# SLMF.Utility.UtiString.calr(DateTime.Parse(Eval("Updated").ToString())) %></div>
+                            <div class="tltrpt2"><a href='<%# Eval("Url") %>' title='<%# Eval("Title")%>' class="tltrpt3"><%# SLMF.Utility.UtiString.clrs(Eval("Title").ToString(),50) %></a></div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+                <div class="navs2" id="full" runat="server">Nhà 3W - Kết nối & Xanh & Hiện đại</div>
+            </div>
+            <%--<img src="slmimages/bgl.png" alt=""/>--%>
+        </div>
+        <div class="mnuwfr">
+            <div class="mnuHFr">
+                <a class="HeaderFr" href="Default.aspx">Trang chủ</a>
+            </div>
+            <div id="Div2" class="mnuHFr" runat="server" visible="true">
+                <a id="hrfProfile" runat="server" class="HeaderFr" href="profile.aspx">Cá nhân</a>
+            </div>
+            <div id="Div1" class="mnuHFr" runat="server" visible="true">
+                <a class="HeaderFr" runat="server" id="hrfPm" href="pm.aspx?id=0">Tin nhắn</a>
+            </div>
+            <div class="mnuHFr">
+                <a class="HeaderFr" href="listactive.aspx">Bài viết mới</a>
+            </div>
+            <%--<div class="mnuHFr">
+                <a class="HeaderFr" href="memberlist.aspx">Thành viên</a>
+            </div>--%>
+            <div class="mnuHFr">
+                <a class="HeaderFr" href="search.aspx">Tìm kiếm</a>
+            </div>
+        </div>
+        <div class="pifr"><img src="slmimages/bgl.png" alt=""/></div>
+        <%--<table class="slmf1">
+            <tr>
+                <td class="td1">
+                    <a href="default.aspx" style="border:0px" title="Dien dan Bat Dong San Viet Nam"><img style="border:0px" src="SlmImages/nha3w.png" alt="Kết nối & Xanh & Hiện đại" /></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="td12"></td>
+            </tr>
+        </table>--%>
+        <%--<div id="ctl00_Menu1_MN" style="width: 100%; height: 30px;">
+            <div class="mnuHFr">
+                    <a class="Header" href="Default.aspx">Trang chủ</a>
+                </div>
+                <div id="Div1" class="mnuHFr" runat="server" visible="false">
+                    <a class="Header" href="#">Cá nhân</a>
+                </div>
+                <div class="mnuHFr">
+                    <a class="Header" href="#">Diễn đàn</a>
+                </div>
+                <div class="mnuHFr">
+                    <a class="Header" href="news/default.aspx">Tin tức</a>
+                </div>
+        </div>--%>
+        <%--<table cellpadding="0" cellspacing="0" class="slmf2">
+            <tr>
+                <td class="td2">
+                    <asp:Label ID="lblWelcome" runat="server" CssClass="lblWelcome"></asp:Label>
+                </td>
+                <td class="td22">
+                    <a href="search.aspx" class="WelcomeLink"><%= GetText("WelHeader", "Search")%></a> 
+                    <a href="listactive.aspx" class="WelcomeLink"><%= GetText("WelHeader", "NewPost")%></a> 
+                    <a href="memberlist.aspx" class="WelcomeLink"><%= GetText("WelHeader", "Member")%></a> 
+                    
+                    <a runat="server" id="hrfProfile" href="profile.aspx" class="WelcomeLink"><%= GetText("WelHeader", "Personal")%></a> 
+                    <a runat="server" id="hrfPm" href="pm.aspx?id=0" class="WelcomeLink"></a> 
+                    
+                    <a id="hplRegister" runat="server" href="register.aspx" class="WelcomeLink"><%= GetText("WelHeader", "Register")%></a> 
+                    <a id="hplLogin" runat="server" href="login.aspx" class="WelcomeLink"><%= GetText("WelHeader", "Login")%></a> 
+                    <a id="hplLogout" runat="server" href="logout.aspx" class="WelcomeLink"><%= GetText("WelHeader", "Logout")%></a>
+                    <script language="javascript" type="text/javascript">
+                        function logoutforum()
+                        {
+                            // ht = document.getElementsByName("html"); -->
+                            //ht[0].style.filter = "progid:DXImageTransform.Microsoft.BasicImage(grayscale=1)";
+                            if (confirm('Bạn có đồng ý thoát khỏi diễn đàn không?'))
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                //ht[0].style.filter = "";
+                                return false;
+                            }
+                        }
+                    </script>
+                </td>
+            </tr>
+        </table>--%>
+    <div id="page_container">
+        <table cellpadding="0" cellspacing="0" class="slmf3">
+            <tr>
+                <td class="td3">
+                </td>
+            </tr>
+        </table>
+        <div class="adrm">
+            <asp:Repeater ID="rptAds" runat="server">
+                <ItemTemplate>
+                    <div class="r2">
+                        <a target="_blank" href='<%# Eval("Url") %>' class="rads3"><div style="padding-bottom:7px"><%# Eval("Title") %></div>
+                        <div style="padding-bottom:7px"><img src='../ads/<%# Eval("Image") %>' class="bads"/></div></a>
+                        <a target="_blank" href='<%# Eval("Url") %>' class="rads4"><%# Eval("BodyText") %></a>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
+        <table cellpadding="0" cellspacing="0" class="slmf4">
+            <tr>
+                <td class="td4">
+                    <asp:contentplaceholder id="slmf1" runat="server">
+                    </asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+        <div class="ph1"><img src="slmimages/bgl.png" alt=""/></div>
+         <div id="footer">
+            <div class="fpln"></div>
+            <div class="cprt">Nhà 3W © 2010 :: Tốt nhất với Firefox 3.6 trở lên</div>
+            <div class="gfln">
+                <a href="#" class="afln">Liên hệ</a>
+                <a href="#" class="afln">Quảng cáo</a>
+                <a href="#" class="afln">Điều khoản</a>
+                <a href="#" class="afln">Bảo mật</a>
+                <a href="#" class="afln">Trợ giúp</a>
+                <a href="#" class="afln">Về chúng tôi</a>
+                <a href="#" class="afln">Diễn đàn</a>
+            </div>
+         </div>
+         <div class="snt"><img src="slmimages/sp.gif" alt=""/></div>
+        <%--<table cellpadding="0" cellspacing="0" class="slmf5">
+            <tr>
+                <td class="td5">Dien dan Dia Oc Viet Nam - Dien dan Bat Dong San Viet Nam - Www.nhachothuehoacban.com.<br />
+                    <%= GetText("CopyrightFoot", "F9Light")%>
+                </td>
+            </tr>
+        </table>--%>
+    </div>
+    </form>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20023838-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

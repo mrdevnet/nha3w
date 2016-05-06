@@ -1,0 +1,270 @@
+﻿
+.tblreg
+{
+	width: 100%;
+	border-width : 0px	
+}
+
+.regtd1
+{
+	width : 100%;
+	vertical-align : top
+}
+
+A.RedLink:link,A.RedLink:active,A.RedLink:visited
+{
+    font-family : Verdana, Arial, Times New Roman, Tahoma;
+    font-size : 9pt;
+    color : #000000;
+    text-decoration : none;
+    font-weight : bold   
+}
+
+A.RedLink:hover
+{
+    font-family :  Verdana, Arial, Times New Roman, Tahoma;
+    font-size : 9pt;
+    color : #3069bb;
+    text-decoration : underline;
+    font-weight : bold
+}
+
+.regtd2
+{
+	width : 100%;	
+	height : 20px
+}
+
+.regtd3
+{
+	width : 100%;
+	vertical-align : top	
+}
+
+
+.tblreg1 
+{
+	font-family: verdana,Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+	border: solid 1px #3569b5;
+	color: #000000;
+	padding: 0px;
+	background-color: #FFFFFF;
+	width : 100%
+}
+
+
+.tblreg2
+{
+	width: 100%;
+	border-style:solid;
+	border-width:1px;
+	border-color:#3569b5;	
+	background-color:#e0e3e9
+}
+
+Td.reg2td1 
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+}
+
+.reg2lblTitle
+{
+	padding-left : 5px;	
+}
+
+Td.reg2td2 
+{
+	background-image: url('../SlmImages/tbl_slm2.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 28px;
+}
+
+Td.reg2td3
+{
+	background-color: #e0e3e9;
+	color:#404040;
+	width : 50%;
+	height : 32px
+}
+
+.reg2lblRegUser
+{
+	padding-left : 5px;
+	font-size : 12px;
+}
+
+.reg2txtUserName
+{
+	padding-left : 3px;
+	font-size : 12px;
+}
+
+Td.reg2td32
+{
+	background-color: #eceff5;
+	color:#404040;
+	padding-left : 5px
+}
+
+.reg2td4 
+{
+	background-image: url('../SlmImages/tbl_slm3.png');
+	font-size: 7pt;
+	height: 28px;
+	padding-top : 2px;
+	text-align : center
+}
+
+.btnReg
+{
+	background:#EEF5FF;
+	border-style : solid;
+	border-width : 1px;
+	border-color : Silver;
+	height : 21px;
+	font-family : Verdana, Arial, Tahoma;
+	font-size : 8pt
+}
+
+.regSecurity
+{
+	font-family : Verdana, Tahoma, Arial;
+	font-size : 12pt;
+	font-weight : bold;
+	color : Green;
+	text-decoration : line-through;
+	vertical-align : middle
+}
+
+A.Refresh:link,A.Refresh:active,A.Refresh:visited
+{
+    font-family : Verdana, Arial, Times New Roman, Tahoma;
+    font-size : 8pt;
+    color : #4F79BE;
+    text-decoration : none;
+}
+
+A.Refresh:hover
+{
+    font-family :  Verdana, Arial, Times New Roman, Tahoma;
+    font-size : 8pt;
+    color : #4F79BE;
+    text-decoration : underline;
+}
+
+.tblRefresh
+{
+	border-width : 0px
+}
+
+.regUserExists
+{
+	font-family : Verdana, Tahoma, Arial;
+	font-size : 8pt;
+	vertical-align : middle
+}
+
+.tblregErr
+{
+	border: solid 1px #3569b5;
+	color: #000000;
+	background-color: #FFFFFF;
+	width : 100%;
+	height : 28px
+}
+
+.regUserError
+{
+	font-family : Verdana, Tahoma, Arial;
+	font-size : 8pt;
+	vertical-align : middle;
+	color : red	
+}
+
+Td.reg2Error
+{
+	background-color: #eceff5;
+	color:#404040;
+	text-align : center
+}
+
+A.editpro:link,A.editpro:active,A.editpro:visited
+{
+	font-family : Verdana, Tahoma, Arial;
+	color: #3b5998;
+	text-decoration:none;
+	font-size:11px;
+	line-height : 28px;
+	padding-left : 8px
+} 
+
+A.editpro:hover
+{
+	font-family : Verdana, Tahoma, Arial;
+    color: #3b5998;
+	text-decoration:underline;
+	font-size:11px;	
+	line-height : 28px;
+	padding-left : 8px
+}
+
+Td.EditPro
+{
+	font-family : Tahoma, Arial, Verdana;
+	font-size:12px;	
+	text-align : right;
+	padding : 10px
+}
+
+.editprotxt
+{
+	padding-left : 3px;
+	font-size : 12px;
+	width : 208px
+}
+
+.editprotxt2
+{
+	padding-left : 3px;
+	font-size : 12px;
+	width : 348px;
+	height : 80px;	
+}
+
+.editprotxt3
+{
+	padding-left : 3px;
+	font-size : 12px;
+	width : 308px
+}
+
+.editavartxt
+{
+	padding-left : 3px;
+	font-size : 12px;
+	width : 360px
+}
+
+.editprore
+{
+	font-family : Verdana, Tahoma, Arial;
+	font-size : 8pt;
+	vertical-align : middle;
+	color : blue	
+}
+
+Td.EditAvatar
+{
+	font-family : Tahoma, Arial, Verdana;
+	font-size:12px;	
+	text-align : center;
+	padding : 10px
+}

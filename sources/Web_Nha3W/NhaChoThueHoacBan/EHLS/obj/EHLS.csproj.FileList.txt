@@ -1,0 +1,5 @@
+bin\Debug\EHLS.dll
+bin\Debug\EHLS.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\EHLS.dll
+obj\Debug\EHLS.pdb

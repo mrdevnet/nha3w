@@ -1,0 +1,5 @@
+bin\Debug\EntitiesSLM.dll
+bin\Debug\EntitiesSLM.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\EntitiesSLM.dll
+obj\Debug\EntitiesSLM.pdb

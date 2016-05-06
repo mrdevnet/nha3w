@@ -1,0 +1,77 @@
+﻿body ,div,td,tr,img,a,ul,li,table
+{
+	 margin:0px;
+	 padding:0px;
+	 border:0px;
+}
+body
+{
+	 text-align:center;
+	 background:fff;
+	 font-family: Tahoma,Arial,Times New Roman;
+	 font-size:13px;
+}
+#divMain
+{
+	background:#EBF1FD;
+	margin:0 auto 0 auto;
+	width:98%;
+	height:auto;
+}
+a:link {  text-decoration: none; color: #3b5889; }
+a:visited {  color: #3b5889; text-decoration: none; }
+a:hover {  text-decoration: underline; color: #3b5889;  font-style: normal;}
+a:active {  text-decoration: none; color: #3b5889;  background:#FFFFCC}
+.tdT
+{
+    width:200px;
+    font-weight:bold;
+    text-align:right;       	
+}
+.divMN
+{
+	width:98%;
+	height:23px;
+	padding-top:3px;
+	padding-left:2%;
+	text-align:left;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	background-color:#3b5889;
+}
+.listMN
+{
+	width:100%;
+	text-align:left;
+	font-size:13px;
+	color:#000;
+	background-color:#fff;
+}
+.mnTT
+{
+list-style:none outside none;
+width:100%;
+}
+.mnTT li 
+{
+	text-align:left;
+	font-size:13px;
+	line-height:20px;
+	padding:0 0 0 10px;
+}
+.popup
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background: url("overlay.png"), repeat ;
+	text-align:center;
+}
+* html .popup
+{
+	background-image:none;  
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+}

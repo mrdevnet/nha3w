@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SLMAdmin.master.cs" Inherits="AdminCp_SLMAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Admin Panel - Nhà 3W - Kết nối & Xanh & Hiện đại</title>
+    <link href="../AdminCp/Styles/SlmAdmin.css" rel="stylesheet" type="text/css" />
+    <link href="../SlmStyles/SlmControls.css" rel="stylesheet" type="text/css" />
+    <link href="../SlmStyles/SlmForum.css" rel="stylesheet" type="text/css" />
+    <link href="../SlmStyles/SlmMost.css" rel="stylesheet" type="text/css" />
+    <link href="../SlmStyles/SlmMsg.css" rel="stylesheet" type="text/css" />
+    <link href="../SlmStyles/SlmTopic.css" rel="stylesheet" type="text/css" />
+    <link href="../SlmStyles/SunLightMountain.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align="center">
+        <table style="border:0px" cellpadding="0px" cellspacing="0px" width="100%">
+            <tr>
+                <td width="100%" colspan="2" style="text-align:left">
+                    <a href="default.aspx" style="border:0px" title="Dien dan Bat Dong San Viet Nam"><img style="border:0px" src="../SlmImages/nhachothuehoacban.png" /></a>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%" colspan="2" style="height:21px"></td>
+            </tr>
+            <tr>
+                <td width="25%" style="vertical-align:top;text-align:left">
+                    <table cellpadding="0" align="center" cellspacing="1" class="tblMost">
+                            <tr>
+                                <td class="TopMost2" align="center">
+                                    <%= LoadSLMF("SLMF_GeneralA", "Panel")%>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <ajaxToolkit:Accordion ID="MyAccordion" runat="server" SelectedIndex="0" HeaderCssClass="accordionHeader" ContentCssClass="accordionContent" FadeTransitions="true" FramesPerSecond="40" TransitionDuration="250" AutoSize="None">
+                                     <Panes>
+                                        <ajaxToolkit:AccordionPane ID = "AccordionPane1" runat = "server">
+                                          <Header>
+                                            <a href = "#" onclick = "return false;" class = "HeaderlinkA"><%= LoadSLMF("SLMF_GeneralA", "Title")%></a>
+                                          </Header>
+                                          <Content>
+                                            &nbsp;<a id="sysc" runat="server" href = "sysconfig.aspx?id=sysc"  class = "ContentLink"><%= LoadSLMF("SLMF_GeneralA", "System")%></a><br /><br />
+                                            &nbsp;<a id="analytics" runat="server" href = "default.aspx?id=analytics"  class = "ContentLink"><%= LoadSLMF("SLMF_Analytics", "Title2")%></a><br /><br />
+                                            &nbsp;<a id="blckuser" runat="server" href = "blockusername.aspx?id=blckuser"  class = "ContentLink"><%= LoadSLMF("SLMF_GeneralA", "SearchMember")%></a>
+                                          </Content>
+                                        </ajaxToolkit:AccordionPane>
+                                        <ajaxToolkit:AccordionPane ID = "AccordionPane2" runat = "server">
+                                          <Header>
+                                            <a href = "#" onclick = "return false;" class = "HeaderlinkA"><%= LoadSLMF("SLMF_ReportA", "Title")%></a>
+                                          </Header>
+                                          <Content>
+                                            &nbsp;<a id="addrpt" runat="server" href = "addreport.aspx?id=addrpt"  class = "ContentLink"><%= LoadSLMF("SLMF_ReportA", "Add")%></a><br /><br />
+                                            &nbsp;<a id="updelrpt" runat="server" href = "updelreport.aspx?id=updelrpt"  class = "ContentLink"><%= LoadSLMF("SLMF_ReportA", "UpdateDeleteReport")%></a><br /><br />
+                                            &nbsp;<a id="rptman" runat="server" href = "reportmanager.aspx?id=rptman"  class = "ContentLink"><%= LoadSLMF("SLMF_ReportA", "ReportManager")%></a><br /><br />
+                                          </Content>
+                                        </ajaxToolkit:AccordionPane>
+                                        <ajaxToolkit:AccordionPane ID = "AccordionPane3" runat = "server">
+                                          <Header>
+                                            <a href = "#" onclick = "return false;" class = "HeaderlinkA"><%= LoadSLMF("SLMF_ForumA", "Title")%></a>
+                                          </Header>
+                                          <Content>
+                                            &nbsp;<a id="addfrm" runat="server" href = "addforum.aspx?id=addfrm"  class = "ContentLink"><%= LoadSLMF("SLMF_ForumA", "AddNew")%></a><br /><br />
+                                            &nbsp;<a id="updelfrm" runat="server"  href = "updelforum.aspx?id=updelfrm"  class = "ContentLink"><%= LoadSLMF("SLMF_ForumA", "UpdelForums")%></a><br /><br />
+                                            &nbsp;<a id="cateman" runat="server" href = "cateman.aspx?id=cateman"  class = "ContentLink"><%= LoadSLMF("SLMF_ForumA", "CategoryMan")%></a><br /><br />
+                                            &nbsp;<a id="privfrm" runat="server" href = "privatefrms.aspx?id=privfrm"  class = "ContentLink"><%= LoadSLMF("SLMF_ForumA", "PrivateForum")%></a><br /><br />
+                                        </Content>
+                                        </ajaxToolkit:AccordionPane>
+                                        <ajaxToolkit:AccordionPane ID = "AccordionPane4" runat = "server">
+                                          <Header>
+                                            <a href = "#" onclick = "return false;" class = "HeaderlinkA"><%= LoadSLMF("SLMF_UserA", "Title")%></a>
+                                          </Header>
+                                          <Content>
+                                            &nbsp;<a id="userman" runat="server" href = "usermanager.aspx?id=userman"  class = "ContentLink"><%= LoadSLMF("SLMF_UserA", "Search")%></a><br /><br />
+                                            &nbsp;<a id="addgrp" runat="server" href = "addgroup.aspx?id=addgrp"  class = "ContentLink"><%= LoadSLMF("SLMF_GroupA", "Title")%></a><br /><br />
+                                            &nbsp;<a id="grpman" runat="server" href = "groupmanager.aspx?id=grpman"  class = "ContentLink"><%= LoadSLMF("SLMF_GroupA", "GroupManager")%></a><br /><br />
+                                            &nbsp;<a id="usrgrp" runat="server" href = "usergroup.aspx?id=usrgrp"  class = "ContentLink"><%= LoadSLMF("SLMF_GroupA", "AddGrp4MbrTitle")%></a><br /><br />
+                                            &nbsp;<a id="grpfrm" runat="server" href = "updelgrpfrm.aspx?id=grpfrm"  class = "ContentLink"><%= LoadSLMF("PermissionGrpFrmA", "Title")%></a><br /><br />
+                                          </Content>
+                                        </ajaxToolkit:AccordionPane>
+                                        <ajaxToolkit:AccordionPane ID = "AccordionPane7" runat = "server">
+                                          <Header>
+                                            <a href = "#" onclick = "return false;" class = "HeaderlinkA"><%= LoadSLMF("ModeratorA", "Title")%></a>
+                                          </Header>
+                                          <Content>
+                                            &nbsp;<a id="moder" runat="server" href = "moderator.aspx?id=moder"  class = "ContentLink"><%= LoadSLMF("ModeratorA", "Manager")%></a><br /><br />
+                                            &nbsp;<a id="almdrs" runat="server" href = "viewmoders.aspx?id=almdrs"  class = "ContentLink"><%= LoadSLMF("ModeratorA", "ViewAllModers")%></a><br /><br />
+                                        </Content>
+                                        </ajaxToolkit:AccordionPane>
+                                        <ajaxToolkit:AccordionPane ID = "AccordionPane5" runat = "server">
+                                          <Header>
+                                            <a href = "#" onclick = "return false;" class = "HeaderlinkA"><%= LoadSLMF("SLMF_AlarmA", "Title")%></a>
+                                          </Header>
+                                          <Content>
+                                            &nbsp;<a id="armman" runat="server" href = "alarm.aspx?id=armman"  class = "ContentLink"><%= LoadSLMF("SLMF_AlarmA", "Title")%></a><br /><br />
+                                            &nbsp;<a id="prioman" runat="server" href = "priority.aspx?id=prioman"  class = "ContentLink"><%= LoadSLMF("SLMF_AlarmA", "PriorityTitle")%></a><br /><br />
+                                        </Content>
+                                        </ajaxToolkit:AccordionPane>
+                                        <ajaxToolkit:AccordionPane ID = "AccordionPane8" runat = "server">
+                                          <Header>
+                                            <a href = "#" onclick = "return false;" class = "HeaderlinkA"><%= LoadSLMF("SLMF_AvatarA", "UploadAvatars")%></a>
+                                          </Header>
+                                          <Content>
+                                            &nbsp;<a id="addava" runat="server" href = "addavatar.aspx?id=addava"  class = "ContentLink"><%= LoadSLMF("SLMF_AvatarA", "AvatarManager")%></a><br /><br />
+                                        </Content>
+                                        </ajaxToolkit:AccordionPane>
+                                        <ajaxToolkit:AccordionPane ID = "AccordionPane6" runat = "server">
+                                          <Header>
+                                            <a href = "#" onclick = "return false;" class = "HeaderlinkA"><%= LoadSLMF("SLMF_ViewOnA", "Title")%></a>
+                                          </Header>
+                                          <Content>
+                                            &nbsp;<a id="vionline" runat="server" href = "viewonline.aspx?id=vionline"  class = "ContentLink"><%= LoadSLMF("SLMF_ViewOnA", "TitleOnline")%></a><br /><br />
+                                            &nbsp;<a id="blcmbr" runat="server" href = "viewblcmember.aspx?id=blcmbr"  class = "ContentLink"><%= LoadSLMF("SLMF_ViewBlockMember", "Title")%></a><br /><br />
+                                            &nbsp;<a id="blcip" runat="server" href = "viewblcip.aspx?id=blcip"  class = "ContentLink"><%= LoadSLMF("SLMF_ViewBlockIP", "Title")%></a><br /><br />
+                                            &nbsp;<a id="addbnr" runat="server" href = "addbanner.aspx?id=addbnr"  class = "ContentLink"><%= LoadSLMF("SLMF_AddBanners", "Title")%></a><br /><br />
+                                          </Content>
+                                        </ajaxToolkit:AccordionPane>
+                                        <ajaxToolkit:AccordionPane ID = "AccordionPane9" runat = "server">
+                                          <Header>
+                                            <a href = "#" onclick = "return false;" class = "HeaderlinkA"><%= LoadSLMF("SLMF_Admins", "Title")%></a>
+                                          </Header>
+                                          <Content>
+                                            &nbsp;<a id="admman" runat="server" href = "addadmins.aspx?id=admman"  class = "ContentLink"><%= LoadSLMF("SLMF_Admins", "Title")%></a><br /><br />
+                                            &nbsp;<a id="aladms" runat="server" href = "viewadmins.aspx?id=aladms"  class = "ContentLink"><%= LoadSLMF("SLMF_Admins", "AllAdmins")%></a><br /><br />
+                                        </Content>
+                                        </ajaxToolkit:AccordionPane>
+                                     </Panes>
+                                 </ajaxToolkit:Accordion>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align:top;text-align:left;width:75%">
+                    <asp:contentplaceholder id="cplAdmin" runat="server">
+                    </asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" class="slmf5">
+            <tr>
+                <td class="td5">Nhà 3W - Kết nối & Xanh & Hiện đại<br />
+                    <%= LoadSLMF("CopyrightFoot", "F9Light")%>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\bin\Debug\BHLS.dll
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\bin\Debug\BHLS.pdb
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\bin\Debug\DHLS.dll
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\bin\Debug\EHLS.dll
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\bin\Debug\UHLS.dll
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\bin\Debug\DHLS.pdb
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\bin\Debug\EHLS.pdb
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\bin\Debug\UHLS.pdb
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\obj\Debug\ResolveAssemblyReference.cache
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\obj\Debug\BHLS.dll
+E:\SoftwareCodes\Backup_Nha3w_0901_2011\Backup_Nha3w_0901_2011\Web_Nha3W\NhaChoThueHoacBan\BHLS\obj\Debug\BHLS.pdb

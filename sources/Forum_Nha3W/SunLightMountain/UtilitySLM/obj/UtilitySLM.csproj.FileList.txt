@@ -1,0 +1,5 @@
+bin\Debug\UtilitySLM.dll
+bin\Debug\UtilitySLM.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\UtilitySLM.dll
+obj\Debug\UtilitySLM.pdb

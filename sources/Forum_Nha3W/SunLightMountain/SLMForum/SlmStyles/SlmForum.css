@@ -1,0 +1,543 @@
+﻿.tblforum
+{
+	width : 100%;	
+}
+
+.forum 
+{
+	font-family: verdana,Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+	border: solid 1px #3569b5;
+	color: #000000;
+	padding: 0px;
+	background-color: #FFFFFF;
+	width : 100%
+}
+
+.forumnew
+{
+	font-family: verdana,Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+	border: solid 0px #3569b5;
+	color: #000000;
+	padding: 0px;
+	background-color: #FFFFFF;
+	width : 100%
+}
+
+.hforum1
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	width : 1%
+}
+
+.hforum71
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	width : 3%	
+}
+
+.contentq2 {
+	BORDER-RIGHT: #000 1px dotted; 
+	PADDING-RIGHT: 4px; 
+	BORDER-TOP: 0px; 
+	PADDING-LEFT: 4px; 
+	BACKGROUND: #fafcfe; 
+	PADDING-BOTTOM: 4px; 
+	MARGIN: 0px 8px 8px; 
+	BORDER-LEFT: #3569b5 5px solid; 
+	COLOR: #465584; 
+	PADDING-TOP: 4px; 
+	BORDER-BOTTOM: #000 1px dotted
+}
+
+.find2 
+{
+	padding: 4px;
+	background-color: #e0e3e9;
+	border: dashed 1px #3569b5;	
+}
+
+.hforum12
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : left;	
+	padding-left : 5px
+}
+
+.hforum22
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : left;	
+	padding-left : 5px;
+	width : 19%
+}
+
+.hforum32
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : center;	
+	padding-left : 5px;
+	width : 25%
+}
+
+.hforum13
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;	
+	text-align : center;
+	width : 7%
+}
+
+.hforum23
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;	
+	text-align : center;	
+}
+
+.hforum44
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;	
+	text-align : center;
+	width : 43%
+}
+
+.hforum14
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : center;
+	width : 7%
+}
+
+.hforum24
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : center;
+	width : 14%
+}
+
+.hforum34
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : center;
+	width : 12%
+}
+
+.hforum556
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : center;
+	width : 10%
+}
+
+.hforum15
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : center;
+	width : 25%
+}
+
+.hforum25
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : center;
+	width : 14%
+}
+
+.hforum35
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : center;
+	width : 16%
+}
+
+.forum2
+{
+	background-image: url('../SlmImages/tbl_slm2.png');
+	background-color: #7D8CFF;
+	color: #ffffff;
+	font-weight: bold;
+	height: 28px;
+	padding-left : 3px
+}
+
+A.CategoryLink:link,A.CategoryLink:active,A.CategoryLink:visited
+{
+	font-family : Tahoma, Arial;
+	color: #ffffff;
+	text-decoration:none;
+	font-size:12px;
+	vertical-align : middle;
+	font-weight : bold
+} 
+
+A.CategoryLink:hover
+{
+	font-family : Tahoma, Arial;
+    color: #ffffff;
+	text-decoration:underline;
+	font-size:12px;
+	vertical-align : middle;
+	font-weight : bold
+}
+
+.imgCategory
+{
+	border-width : 0px;
+	vertical-align : middle;
+	padding-bottom : 1px
+}
+
+.imgForum
+{
+	border-width : 0px;
+	vertical-align : middle;
+	padding : 5px
+}
+
+.imgAnnounce
+{
+	border-width : 0px;
+	vertical-align : middle;
+	padding-bottom : 5px
+}
+
+.imgBorderW
+{
+	border-width : 0px;	
+}
+
+.imgBorderW1
+{
+	border-width : 0px;
+}
+
+.imgBorderW2
+{
+	border-width : 0px;
+	vertical-align : bottom	
+}
+
+.forumshow 
+{
+	background-color: #eceff5;
+	color:#404040;
+}
+
+td.forumshow1
+{
+	text-align : center
+}
+
+td.forumshow12
+{
+	text-align : left
+}
+
+A.ForumLink:link,A.ForumLink:active,A.ForumLink:visited
+{
+	font-family : Tahoma, Arial, Verdana;
+	color: #3b5998;
+	text-decoration:none;
+	font-size:12px;
+	font-weight : bold
+} 
+
+A.ForumLink:hover
+{
+	font-family : Tahoma, Arial, Verdana;
+    color: #3b5998;
+	text-decoration:underline;
+	font-size:12px;
+	font-weight : bold
+}
+
+.ForumDetails
+{
+	font-family : Verdana, Tahoma, Arial;
+	font-size : 11px
+}
+
+Td.ForumDescript
+{
+	padding : 5px;
+}
+
+td.forumtocpic
+{
+	text-align : center;
+	padding : 3px
+}
+
+
+A.TopicLink:link,A.TopicLink:active,A.TopicLink:visited
+{
+	font-family : Tahoma, Arial, Verdana;
+	color: #3b5998;
+	text-decoration:none;
+	font-size:11px;	
+} 
+
+A.TopicLink:hover
+{
+	font-family : Tahoma, Arial, Verdana;
+    color: #3b5998;
+	text-decoration:underline;
+	font-size:11px;	
+}
+
+A.TopicLink2:link,A.TopicLink2:active,A.TopicLink2:visited
+{
+	font-family : Tahoma, Arial, Verdana;
+	color: #3b5998;
+	text-decoration:none;
+	font-size:12px;
+	font-weight : bold
+} 
+
+A.TopicLink2:hover
+{
+	font-family : Tahoma, Arial, Verdana;
+    color: #3b5998;
+	text-decoration:underline;
+	font-size:12px;
+	font-weight : bold
+}
+
+.TimeMessage
+{
+	font-family : Tahoma, Arial, Verdana;
+    font-size:11px;
+}
+
+.ModerTitle
+{
+	font-family : Tahoma, Arial, Verdana;
+    font-size:11px;
+	font-weight : bold
+}
+
+.RedLink2
+{
+	font-family : Verdana, Arial, Times New Roman, Tahoma;
+    font-size : 9pt;
+    color : #000000;
+    font-weight : bold 
+}
+
+.GetSpace
+{
+	font-family : Times New Roman, Tahoma;
+    color : #3b5998;    
+    font-size : 12px
+}
+
+.forum3
+{
+	background-color: #7D8CFF;
+	height: 0px;
+}
+
+
+.announce
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	width : 1%
+}
+
+.announce2
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : left;	
+	padding-left : 5px;
+	
+}
+
+.announce3
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;	
+	text-align : center;	
+}
+
+td.forumannounce3
+{
+	text-align : center;
+	width : 26%
+}
+
+.AnnounceTitle
+{
+	font-family : Tahoma, Arial, Verdana;
+    color: Black;
+	font-size:12px;
+	vertical-align : middle;
+	font-weight : bold
+}
+
+
+A.TitleLnk:link,A.TitleLnk:active,A.TitleLnk:visited
+{
+	font-family : Tahoma, Arial;
+	color: #3b5998;
+	text-decoration:none;
+	font-size:11px;
+	font-weight : bold
+} 
+
+A.TitleLnk:hover
+{
+	font-family : Tahoma, Arial;
+    color: #3b5998;
+	text-decoration:underline;
+	font-size:11px;
+	font-weight : bold
+}
+
+A.NewPsts:link,A.NewPsts:active,A.NewPsts:visited
+{
+	font-family : Tahoma, Arial;
+	color: #3b5998;
+	text-decoration:none;
+	font-size:11px;
+} 
+
+A.NewPsts:hover
+{
+	font-family : Tahoma, Arial;
+    color: #3b5998;
+	text-decoration:underline;
+	font-size:11px;
+}
+
+.AltTopic
+{
+	font-family : Tahoma, Arial, Verdana;
+    color: Black;
+	font-size:11px
+}
+
+.static2
+{
+	width : 100%;	
+	height : 17px
+}
+
+.statictis
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;	
+}
+
+.ListActiveUser 
+{
+	background-color: #eceff5;
+	color:#404040;
+	padding : 5px;
+	font-family : Verdana, Tahoma, Arial;
+	font-size : 11px;
+	line-height : 16px
+}
+
+.hforumAnnounce
+{
+	background-image: url('../SlmImages/tbl_slm1.png');
+	background-color: #7D8CFF;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 32px;
+	font-size:12px;
+	text-align : center;
+}

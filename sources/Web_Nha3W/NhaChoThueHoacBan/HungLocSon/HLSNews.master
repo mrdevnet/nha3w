@@ -1,0 +1,397 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HLSNews.master.cs" Inherits="HLSNews" %>
+<%@ Register Src="ctrls/DownloadCtl.ascx" TagName="DownloadCtl" TagPrefix="uc3" %>
+<%@ Register Src="ctrls/TopNews.ascx" TagName="TopNews" TagPrefix="uc2" %>
+<%@ Register Src="ctrls/Menu.ascx" TagName="Menu" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Nhà 3W - Kết nối & Xanh & Hiện đại</title>
+    <link href="App_Themes/User/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/User/NewsItem.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/User/menu.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/User/SubMenu.css" rel="stylesheet" type="text/css" />
+    <link href="styles/clrs.css" rel="stylesheet" type="text/css" />
+    <link href="styles/Calculator.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../java/View.js"></script>
+    
+    <%--<script type="text/javascript" src="../Java/View.js"></script>--%>
+    
+    <link rel="shortcut icon" href="images/favico.ico" type="image/x-icon" />
+    <script type="text/javascript">
+        var msgWindow = null;
+        function showDownload(url)
+        {
+            width = 400;
+            height = 300;
+            top_val = (screen.height - height) / 2 - 30;
+            if (top_val < 0) { top_val = 0; } left_val = (screen.width - width) / 2;
+            if(msgWindow != null)
+            {
+                msgWindow.close();
+            }
+            msgWindow = window.open(url, "", "toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=0,width=" + width + ",height=" + height + ", top=" + top_val + ",left=" + left_val);
+        }
+    </script>
+    <script type="text/javascript">
+         function FormatNumber(str)
+         {
+            var strTemp = ConvertPriceText(GetNumber(str));
+            if(strTemp.length <= 3)
+            return strTemp;
+            strResult = "";
+            for(var i =0; i< strTemp.length; i++)
+            strTemp = strTemp.replace(",", "");
+            for(var i = strTemp.length; i>=0; i--)
+            {
+            if(strResult.length >0 && (strTemp.length - i -1) % 3 == 0)
+            strResult = "," + strResult;
+            strResult = strTemp.substring(i, i + 1) + strResult;
+            } 
+            return strResult;
+        } 
+        function ConvertPriceText(num)
+        {
+             num= num.replace(/-+-/g,"0");    
+             for(i=0;i<num.length;i++)
+             {
+               num=num.replace(",","");
+             }
+             return num; 
+        }     
+        function GetNumber(str)
+        {
+            for(var i = 0; i < str.length; i++)
+            { 
+            var temp = str.substring(i, i + 1); 
+            if(!(temp == "," || temp == "." || (temp >= 0 && temp <=9)))
+            {
+            alert("Vui lòng nhập số (0-9)!");
+            return str.substring(0, i);
+            }
+            if(temp == " ")
+                return str.substring(0, i);
+            }
+            return str;
+        }
+        function settruoc()
+         {
+            document.getElementById('truoc').value=FormatNumber(document.getElementById('truoc').value);	
+            var gia = document.getElementById('gia').value;
+	        var truoc = document.getElementById('truoc').value;
+	        if(truoc!="" && truoc!="0" && gia!="" && gia!="0")
+	        {
+		        gia = ConvertPriceText(gia);
+		        gia = parseInt(gia);
+		        truoc = ConvertPriceText(truoc);
+		        truoc = parseInt(truoc);
+                if(truoc > gia)
+                {
+                    truoc=gia;
+                    document.getElementById('phan').value=100;
+                    document.getElementById('truoc').value=truoc;
+		            document.getElementById('truoc').value=FormatNumber(document.getElementById('truoc').value);
+                }
+                else
+                {
+		            var phan = Math.round((truoc/gia)*100);
+		            document.getElementById('phan').value = phan;	
+		        }	
+	        }
+		        setphan();
+         }
+         function setphan()
+         {
+            var phan = document.getElementById('phan').value;
+	        var gia = document.getElementById('gia').value;
+
+	        if (parseInt(phan) >100) {
+		        phan = '100';
+	        }
+	        if (phan !="" && phan!="0" && gia!="" && gia!="0") {
+		        gia=ConvertPriceText(gia);
+		        gia=parseInt(gia);
+		        phantram=parseInt(phan);
+		        var truoc=Math.round((phan/100)*gia);
+		        document.getElementById('truoc').value=truoc;
+		        document.getElementById('truoc').value=FormatNumber(document.getElementById('truoc').value);
+	        }
+        	
+         }
+         function setthang()
+         {
+	        var thang=document.getElementById('thang').value;
+
+	        if(thang!="" && thang!="0")
+	        {
+		        thang=parseInt(thang);
+		        nam=Math.round((thang/12));
+		        document.getElementById('nam').value=nam;
+	        }
+	        setnam();
+         }
+         function setnam()
+         {
+	        var nam=document.getElementById('nam').value;
+
+	        if(nam!="" && nam!="0")
+	        {
+		        nam=parseInt(nam);
+		        thang=nam*12;
+		        document.getElementById('thang').value=thang;
+	        }	
+         }
+         function doTinh()
+         {
+        	
+	        var lai = document.getElementById('lai').value;
+	        var thang = document.getElementById('thang').value;
+	        var nam = document.getElementById('nam').value;
+	        var truoc = ConvertPriceText(document.getElementById('truoc').value);
+	        var gia = ConvertPriceText(document.getElementById('gia').value);
+        	
+	        flag=true;
+	        if(lai=="" || lai=="0" || isNaN(lai))
+	        {
+	            alert('Lãi suất không đúng !');
+		        flag=false;
+		        document.getElementById('lai').value=0;
+		        document.getElementById('lai').lai.focus();		
+	        }
+	        if(thang=="" || thang=="0" || isNaN(thang))
+	        {
+	            alert('Thời hạn không đúng !');
+		        flag=false;
+		        document.getElementById('thang').focus();
+	        }
+	        if(truoc=="" || truoc=="0" || isNaN(truoc))
+	        {
+	            alert('Tiền trả trước không đúng !');
+		        flag=false;
+		        document.getElementById('truoc').focus();
+	        }
+	        if(gia=="" || gia=="0" || isNaN(gia))
+	        {
+	            alert('Chưa nhập giá trị căn hộ !');
+		        flag=false;
+		        document.getElementById('gia').value=0;
+		        document.getElementById('gia').focus();
+	        }
+	        if(flag)
+	        {	
+		        gia=ConvertPriceText(gia);
+		        gia=parseInt(gia);
+		        truoc=ConvertPriceText(truoc);
+		        truoc=parseInt(truoc);
+		        thang=parseInt(thang);
+		        nam=parseInt(nam);
+		        lai=parseFloat(lai);	
+		        document.getElementById('lai').value=lai;
+		        document.getElementById('nam').value=thang/12;
+		        document.getElementById('phan').value=(truoc/gia)*100;
+		        var phaitra=(((gia-truoc)/thang) + ((gia-truoc)*lai/100));
+		        var tong=Math.round(phaitra);
+		        document.getElementById('tong').value=tong;
+		        document.getElementById('tong').value=FormatNumber(document.getElementById('tong').value);
+	        }
+
+        }
+        function doTinhlai()
+        {
+            document.getElementById('gia').value="1,000,000,000";
+	        document.getElementById('truoc').value="100,000,000";
+	        document.getElementById('thang').value="180";
+	        document.getElementById('lai').value="1";
+	        document.getElementById('phan').value="0";
+	        document.getElementById('nam').value="0";
+	        document.getElementById('tong').value="0";
+
+        }
+        function chbg(a)
+        {
+            var c = document.getElementById(a);
+            c.className = "Headercl";
+        }
+    </script>
+</head>
+<body>
+    <form id="from1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <div id="content">
+        <div class="logo_content">
+            <div class="topBn">
+            <div id="logo">
+                <a href="../default.aspx" title="Nhà 3W - Kết nối & Xanh & Hiện đại"><img alt="" src="../images/nha3w.png" id="img2" class="ilogo" /></a>
+            </div>
+            <div id="banner">
+                <div class="ins">
+                    <input type="text" id="txtS" value="Tìm kiếm" class="search" runat="server" onfocus="if (this.value=='Tìm kiếm') this.value='';" onblur="if (this.value=='') this.value='Tìm kiếm';" />
+                </div>
+                <div class="ins2">
+                    <input id="btnS" type="image" src="App_Themes/User/sh.jpg"  alt="Tìm kiếm" runat="server" onserverclick="btnS_ServerClick" />
+                </div>
+                <div class="mnuH">
+                    <a class="Header" id="bghp" onclick="chbg('bghp');" href="../default.aspx">Trang chủ</a>
+                </div>
+                <div id="pri" class="mnuH" runat="server" visible="false">
+                    <a class="Header" id="bgpr" onclick="chbg('bgpr');" href="../editpro.aspx">Cá nhân</a>
+                </div>
+                <div class="mnuH">
+                    <a class="Header" id="bgfr" onclick="chbg('bgfr');" href="../forum/default.aspx">Diễn đàn</a>
+                </div>
+                <div class="mnuH">
+                    <a class="Headercl" href="default.aspx">Tin tức</a>
+                </div>
+                <div id="reg" class="mnuH" visible="true" runat="server">
+                    <a class="Header" id="bgrg" onclick="chbg('bgrg');" href="../login.aspx">Đăng ký</a>
+                </div>
+                <div id="lg" class="mnuH" visible="true" runat="server">
+                    <a class="Header" id="bglg" onclick="chbg('bglg');" href="../login.aspx">Đăng nhập</a>
+                </div>
+                <div id="sg" class="mnuH" visible="false" runat="server">
+                    <a class="Header" id="bgsn" onclick="chbg('bgsn');" href="../signout.aspx">Thoát</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_content"></div>
+    <div class="dvtltns">
+        <div class="tltrptns">
+            <asp:Repeater ID="rpts" runat="server">
+                <ItemTemplate>
+                    <div class="tltrpt1"><%# HungLocSon.Tools.Support.calr(DateTime.Parse(Eval("Updated").ToString())) %></div>
+                    <div class="tltrpt2"><a href='<%# Eval("Url") %>' title='<%# Eval("Title")%>' class="tltrpt3"><%# HungLocSon.Tools.Support.ReleaseInput(Eval("Title").ToString(),50)%></a></div>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
+        <div class="na" id="full" runat="server">Nhà 3W - Kết nối & Xanh & Hiện đại</div>
+    </div>
+    </div>
+    <table id="tableM" style="background-color:White;" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td style="width: 944px">
+                <div id="divMain" >
+                <div style="width:100%; text-align:left;border-bottom:1px solid #afc3d6;margin-top:-3px;background-color:#d8dfea">
+                    <uc1:Menu ID="Menu1" runat="server" />
+                </div>
+                <div id ="divBody">
+                    <div id="divR">
+                        <asp:ContentPlaceHolder ID="cphUser" runat="server"></asp:ContentPlaceHolder>
+                    </div >
+                <div id="divL" style="text-align: left" >
+                    <div class="bdnt1">
+                        <div style="font-size:11px; float:left; font-weight:bold;padding-left:5px">Tài trợ</div>
+                        <div style=" margin:0px 0px 0px auto; text-align:right; ">
+                            <a href="#" style="font-size:11px;">Tạo Quảng Cáo</a>
+                        </div>
+                    </div>
+                <asp:Repeater ID="rptAds" runat="server">
+                    <ItemTemplate>
+                        <div class="bdn">
+                            <a target="_blank" href='<%# Eval("Url") %>'><img alt="" src='../ads/<%# Eval("Image") %>' style="float:left;padding-right:10px" /></a>
+                            <a target="_blank" href='<%# Eval("Url") %>'><span style="font-size:11px; font-weight:bold;font-family:Tahoma"><%# Eval("Title") %></span></a><br />
+                            <span style="font-size:11px;font-family:Tahoma"><%# Eval("BodyText") %></span>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+                <div class="bdnt2"><a href="#" style="font-size:11px;">Qc khác</a></div>
+                <div class="bdnt3"><%--    <hr />--%></div>
+                <div style="width:271px;padding-top:3px">
+                    <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/Nha-3W/178503658829031" width="271" connections="8" stream="false" header="false"></fb:like-box>
+                </div><%--<hr />--%>
+                <div  class="divBG">
+                    <div class="divMN" >Tin nổi bật</div>
+                    <div class="listMN " >
+                        <uc2:TopNews ID="topVip" runat="server" />&nbsp;
+                    </div>
+                </div>
+                <div class="divBG">
+                    <div class="divMN" >Đánh giá cao</div>
+                        <div class="listMN " >
+                            <uc2:TopNews ID="topR" runat="server" />
+                        </div>
+                </div>
+                <div class="divBG">
+                    <div class="divMN " >Xem nhiều nhất</div>
+                        <div class="listMN " >
+                            <uc2:TopNews ID="topView" runat="server" />
+                        </div>
+                    </div>
+                <div  class="divBG">
+                    <div class="divMN " >Download</div>
+                        <div class="listMN" >
+                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                <ContentTemplate>
+                                    <uc3:DownloadCtl ID="DownloadCtl1" runat="server" />
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                    </div>
+                    <div class="divBG">
+                    <div class="divMN" >Lãi suất vay (VNĐ/Tháng)</div>
+                        <div class="listMN" >
+                            <div class="clt-content">
+                                <div class="clt-left">Giá trị căn hộ</div>
+                                <div class="clt-right">
+                                    <input id="gia" type="text" class="clt-textbox"  onkeyup="this.value = FormatNumber(this.value)" value="1,000,000,000"/><span class="spnbnk"> VNĐ</span></div>
+                                <div class="clt-left">Số tiền trả trước</div>
+                                <div class="clt-right">
+                                    <input id="truoc" type="text" class="clt-textbox" onkeyup="settruoc()" value="100,000,000"/><span class="spnbnk"> VNĐ</span></div>
+                                <div class="clt-left">Tương đương</div>
+                                <div class="clt-right">
+                                    <input id="phan" type="text" class="clt-textbox" onkeyup="setphan()" value="0"/><span class="spnbnk"> %</span></div>
+                                <div class="clt-left">Thời hạn vay</div>
+                                <div class="clt-right">
+                                    <input id="thang" type="text" class="clt-textbox"  onkeyup="setthang()" value="180"/><span class="spnbnk"> Tháng</span></div>
+                                <div class="clt-left">Tương đương</div>
+                                <div class="clt-right">
+                                    <input id="nam" type="text" class="clt-textbox"  onkeyup="setnam()" value="0"/><span class="spnbnk"> Năm</span></div>
+                                <div class="clt-left">Lãi suất vay</div>
+                                <div class="clt-right">
+                                    <input id="lai" type="text" class="clt-textbox" value="1"/><span class="spnbnk"> %/Tháng</span></div>
+                                <div class="clt-left">Số tiền &amp; trả góp</div>
+                                <div class="clt-right">
+                                    <input id="tong" type="text" class="clt-textbox" style="color:#73AC59; font-weight:bold;" value="0"/><span class="spnbnk"> VNĐ</span></div>
+                                <div class="clt-content-btn">
+                                    <input id="Tinh" class="clt-button" type="button" value="Tính" onclick="doTinh(); return false;" />
+                                    <input id="Tinhlai" class="clt-button" type="button" value="Tính lại" onclick="doTinhlai(); return false;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div id="footer">
+                <div class="fpln"></div>
+                    <div class="cprt" style="text-align: left">Nhà 3W © 2010 :: Tốt nhất với Firefox 3.6 trở lên</div>
+                    <div class="gfln">
+                    <a href="#" class="afln">Liên hệ</a>
+                    <a href="#" class="afln">Quảng cáo</a>
+                    <a href="#" class="afln">Điều khoản</a>
+                    <a href="#" class="afln">Bảo mật</a>
+                    <a href="#" class="afln">Trợ giúp</a>
+                    <a href="#" class="afln">Về chúng tôi</a>
+                    <a href="../forum/default.aspx" class="afln">Diễn đàn</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </table>
+    </form>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20023838-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

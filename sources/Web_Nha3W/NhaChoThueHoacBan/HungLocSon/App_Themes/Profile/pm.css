@@ -1,0 +1,181 @@
+﻿.sms_menu
+{
+	margin-top:15px;
+	border-top:solid 1px #E0E0E0;
+	height:25px;
+	background-color:#E0E0E0;
+	text-align:left;
+	padding:3px 0 3px 9px;
+	width:98.5%
+}
+.sms_menubt
+{
+	text-align:left;
+	padding:5px 0px 1px 20px;
+}
+.sms_process
+{
+	width:100%;
+	text-align:center;
+}
+
+.smsBtnFnds
+{
+	float:left
+}
+
+.nwf
+{
+	font-family : Tahoma, Arial, Verdana;
+	font-size: 11px;
+	padding : 4px 2px 4px 3px
+}
+
+.sms_btn
+{
+	border-color:#C8C8C8;
+	opacity:1;
+	-moz-box-shadow:none;
+	background:none repeat scroll 0 0 #F2F2F2;
+	cursor:default;
+	border-bottom-color:#999999;
+	border-style:solid;
+	border-width:1px;
+	margin-right:6px;
+	color:#333333;
+	display:inline-block;
+	font-size:11px;
+	font-weight:bold;
+	line-height:normal !important;
+	padding:5px 6px;
+	text-align:center;
+	text-decoration:none;
+	vertical-align:top;
+	white-space:nowrap;
+}
+.sms_content
+{
+	margin-top:5px;
+	margin-bottom:5px;
+	height:auto;
+	border-bottom:solid 1px #D8DFEA;
+	width:99%
+}
+.sms_item_ckb
+{
+	padding-top:5px;
+	text-align:center;	
+	width:25px;
+	float:left;	
+}
+.sms_item_img
+{	
+	padding-top:4px;
+	width:50px;
+	float:left;	
+	padding-bottom:2px;	
+	border:0;
+}
+.sms_item_from
+{
+	padding-top:5px;
+	width:120px;	
+	padding-left:5px;
+	height:auto;
+	float:left;	
+}
+.sms_item_container
+{
+	padding-top:5px;
+	width:540px;
+	height:auto;
+	float:left;	
+	padding-bottom:5px;
+}
+lblsms:hover {font-weight:bold; text-decoration:underline;}
+.sms_labell
+{
+	float:left;	
+	font-weight:bold;
+	color:#3B5998;
+}
+.sms_labelr
+{
+	float:left;
+	margin-right:3px;
+	font-size:10px;
+	text-align:right;
+	vertical-align:bottom;
+	width:30px;	
+}
+.sms_item_container:hover{cursor:pointer;}
+.sms_item_del
+{		
+	background:url('~/images/delpm.gif') no-repeat scroll left bottom transparent;
+	display:block;
+	height:18px;	
+	/*text-indent:-8192px;*/
+	border-collapse:collapse;
+	width:18px;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:11px;
+	text-align:left;
+	float:right;
+	/*background-color:Aqua;
+	background-image: url("~/images/delpm.gif");
+	background-repeat : repeat*/
+	
+}
+.sms_item_del:hover { background-position: right bottom; text-decoration:none;}
+.buttonss
+{
+	margin-right:2px;
+	margin-top:3px;
+	margin-left:465px;	
+	float:none;
+	width:auto;
+	font-size:11px;
+	-moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.1);
+	padding:2px 6px;
+	background-color:#5B74A8;
+	background-position:0 -48px;
+	border-color:#29447E #29447E #1A356E;
+	color:#FFFFFF;
+	border-style:solid;
+	font-weight:normal;
+	cursor:pointer;
+	display:inline-block;
+	line-height:normal !important;
+	border-width:1px;
+	text-align:center;
+	text-decoration:none;
+	vertical-align:top;
+	white-space:nowrap;
+}
+.buttonss:active{background:#3B5998;}
+a.buttons:active{background:#3B5998;}
+.sms_item_sumary
+{
+	padding-top:1px;
+	height:38px;
+	width:100%;
+	overflow: hidden;	
+}
+.textbox
+{	
+	margin-top:2px;
+	border:1px solid #BDC7D8;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size:11px;
+	padding:3px;
+	text-align:left;
+	padding-bottom:4px;
+}
+.label{width:100%; float:left; margin-top:5px;}
+.sms_menubt a:hover {text-decoration:underline;}
+.sms_menu a:hover {cursor:pointer;}
+.sms_menu a:active {background:#fff;}
+
+.styledtl {margin-top:4px;margin-bottom:-35px;width:99%;}

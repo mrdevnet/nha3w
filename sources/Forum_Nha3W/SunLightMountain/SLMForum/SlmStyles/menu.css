@@ -1,0 +1,24 @@
+﻿
+.ulMn {padding:0 0 0 0px; margin:0; list-style:none; height:28px; background:#D8DFEA; position:relative; z-index:500; font-family: tahoma, arial, verdana, sans-serif;}
+/*.ulMn li.top {display:block; float:left; margin:0px 2px 0px 2px;}*/
+.ulMn li.top {display:block; float:left; margin:0px 2px 0px 2px;}
+.ulMn li a.top_link {display:block; float:left; height:28px; line-height:27px; color:#3B5998; text-decoration:none; font-size:13px; font-weight:bold; padding:0 0 0 0px; cursor:pointer;}
+/*.ulMn li a.top_link span {float:left; display:block; padding:0 10px 0 10px; height:28px;}*/
+.ulMn li a.top_link span {float:left; display:block; padding:0 10px 0 10px; height:28px;}
+.ulMn li a.top_link:hover {color:#fff; background:#627AAD}
+.ulMn li a.top_link:hover span {color:#fff; background:#627AAD}
+
+/*.ulMn li:hover > a.top_link {color:#fff; background:#627AAD; height:30px;margin-top:-2px;  line-height:33px;}*/
+.ulMn li:hover > a.top_link {color:#fff; background:#627AAD; height:30px;margin-top:0px;line-height:28px;}
+.ulMn li:hover > a.top_link span {color:#fff; background:#627AAD; height:30px;margin-top:0px; line-height:28px;}
+
+.ulMn a:hover {visibility:visible; position:relative; z-index:200;}
+.ulMn li:hover {position:relative; z-index:200;}
+.ulMn ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+.ulMn ul.sub {width:130px;padding:0px; }
+
+.ulMn :hover ul {left:0; top:26px; background: #627AAD; padding:3px 0px 0px 0px;  white-space:nowrap; height:auto; z-index:300;}
+.ulMn :hover ul li {display:block; height:23px; position:relative;font-size:13px; font-weight:bold; width:auto;}
+.ulMn :hover ul li a {display:block; font-size:13px; height:23px; line-height:23px; width:auto; padding:0 10px; color:#fff; text-decoration:none;}
+.ulMn :hover ul li a:hover {background:#D8DFEA; color:#3B5998;}

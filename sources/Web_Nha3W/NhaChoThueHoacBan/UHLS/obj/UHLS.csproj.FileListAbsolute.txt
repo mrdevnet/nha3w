@@ -1,0 +1,5 @@
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\UHLS\bin\Debug\UHLS.dll
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\UHLS\bin\Debug\UHLS.pdb
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\UHLS\obj\Debug\ResolveAssemblyReference.cache
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\UHLS\obj\Debug\UHLS.dll
+D:\HungLocSon\HLSProject\NhaChoThueHoacBan\UHLS\obj\Debug\UHLS.pdb

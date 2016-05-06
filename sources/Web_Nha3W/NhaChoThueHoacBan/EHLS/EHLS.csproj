@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A99F414-EF82-42DC-A431-3516F0222D5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EHLS</RootNamespace>
+    <AssemblyName>EHLS</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Accounts.cs" />
+    <Compile Include="Advertises.cs" />
+    <Compile Include="Anas.cs" />
+    <Compile Include="Authorizations.cs" />
+    <Compile Include="Calls.cs" />
+    <Compile Include="Catalogs.cs" />
+    <Compile Include="Categories.cs" />
+    <Compile Include="Cities.cs" />
+    <Compile Include="Classes.cs" />
+    <Compile Include="ColorMbrs.cs" />
+    <Compile Include="Colors.cs" />
+    <Compile Include="Contacts.cs" />
+    <Compile Include="Districts.cs" />
+    <Compile Include="Documents.cs" />
+    <Compile Include="Downloads.cs" />
+    <Compile Include="Emails.cs" />
+    <Compile Include="Flowing.cs" />
+    <Compile Include="Groups.cs" />
+    <Compile Include="Houses.cs" />
+    <Compile Include="Locations.cs" />
+    <Compile Include="Logs.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="MemberF.cs" />
+    <Compile Include="ModerAuthors.cs" />
+    <Compile Include="Moders.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="Pager.cs" />
+    <Compile Include="PFiles.cs" />
+    <Compile Include="Pms.cs" />
+    <Compile Include="Polls.cs" />
+    <Compile Include="Posts.cs" />
+    <Compile Include="Profile.cs" />
+    <Compile Include="ProfileF.cs" />
+    <Compile Include="Projects.cs" />
+    <Compile Include="Properties.cs" />
+    <Compile Include="Reports.cs" />
+    <Compile Include="Results.cs" />
+    <Compile Include="RssNews.cs" />
+    <Compile Include="Saves.cs" />
+    <Compile Include="Sets.cs" />
+    <Compile Include="Streets.cs" />
+    <Compile Include="Topics.cs" />
+    <Compile Include="Tracks.cs" />
+    <Compile Include="TransIn.cs" />
+    <Compile Include="TransOut.cs" />
+    <Compile Include="TrFlower.cs" />
+    <Compile Include="TrFlowing.cs" />
+    <Compile Include="Ups.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Violations.cs" />
+    <Compile Include="Votes.cs" />
+    <Compile Include="Wallet.cs" />
+    <Compile Include="Wards.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+</Project>

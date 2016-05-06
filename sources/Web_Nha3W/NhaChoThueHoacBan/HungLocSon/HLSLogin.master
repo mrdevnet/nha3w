@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HLSLogin.master.cs" Inherits="HLSLogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Đăng nhập Tài khoản Nha3W.com. Nhà 3W - Kết nối & Xanh & Hiện đại</title>    
+    <link href="App_Themes/Profile/master_login.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/Profile/login.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/favico.ico" type="image/x-icon" />
+    <%--<script type="text/javascript">
+        function Catpc()
+        {
+            var img = document.getElementById("icp");
+            img.src= "../ctrls/catpc.ashx?query="+ Math.random();
+        }
+    </script>--%>
+</head>
+<body>
+   <form id="frm" runat="server">
+    <asp:ScriptManager ID="hlscm_login" runat="server">
+    </asp:ScriptManager>
+    <div id="banner"></div>
+    <div id="main">
+        <div class="loggedout_menubar_container">
+        <div class="loggedout_menubar_content">
+                <a href="Default.aspx" title="Nhà 3W - Kết nối & Xanh & Hiện đại"><img src="images/nha3w.png" /></a></div>
+        </div>
+        <div class="signup_bar_container">
+            <div class="signup_content">
+            <a class="signup_content_left" href="login.aspx"><span class="signup_content_reg">Đăng ký</span></a>
+            <span class="signup_content_right"><span>Nhà 3W - Kết nối & Xanh & Hiện đại</span></span>
+            </div>
+        </div>
+        <div id="dropmenu_container"></div>
+        <div id="content_container">
+            <div class="content_content">
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <%--<div id="footer_container">
+            <div id="footer_contentCurve"></div>
+            <div id="footer_content">
+                <div id="footer_content_left">Nha3W 2010</div>
+                <div id="footer_content_right">
+                    <a>Về chúng tôi</a>
+                </div>
+            </div>
+        </div>--%>
+        <div id="footer" style="width:994px;margin:0px auto;">
+                <div class="fpln"></div>
+                    <div class="cprt" style="text-align: left">Nhà 3W © 2010 :: Tốt nhất với Firefox 3.6 trở lên</div>
+                    <div class="gfln" style="padding-top:5px">
+                    <a href="#" class="afln">Liên hệ</a>
+                    <a href="#" class="afln">Quảng cáo</a>
+                    <a href="#" class="afln">Điều khoản</a>
+                    <a href="#" class="afln">Bảo mật</a>
+                    <a href="#" class="afln">Trợ giúp</a>
+                    <a href="#" class="afln">Về chúng tôi</a>
+                    <a href="forum/default.aspx" class="afln">Diễn đàn</a>
+                </div>
+            </div>
+    </div>
+ </form>
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20023838-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ </body>
+</html>
